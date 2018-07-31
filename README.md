@@ -1,8 +1,11 @@
-<<<<<<< HEAD
-# mc_hackathon-2018
+# mc_hackathon-2018 Official website
 
 ## Project setup
+請先確認 npm 版本，以防 build 失敗
 ```
+npm -v 
+5.6.0
+
 npm install
 ```
 
@@ -20,7 +23,4 @@ npm run build
 ```
 npm run lint
 ```
-=======
-# MC_Hackathon-2018
-MeiChu-Hackathon Official Website
->>>>>>> 75fc44a47abc892180b0c4b7f14c681291da572b
+

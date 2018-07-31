@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # mc_hackathon-2018
 
 ## Project setup
@@ -19,3 +20,7 @@ npm run build
 ```
 npm run lint
 ```
+=======
+# MC_Hackathon-2018
+MeiChu-Hackathon Official Website
+>>>>>>> 75fc44a47abc892180b0c4b7f14c681291da572b

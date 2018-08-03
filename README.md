@@ -1,26 +1,21 @@
-# mc_hackathon-2018 Official website
+# mc_hackathon-2018
 
-## Project setup
-請先確認 npm 版本，以防 build 失敗
-```
-npm -v 
-5.6.0
+> MeiChu Hackathon 2018 Official Website
 
+## Build Setup
+
+``` bash
+# install dependencies
 npm install
-```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+# serve with hot reload at localhost:8080
+npm run dev
 
-### Compiles and minifies for production
-```
+# build for production with minification
 npm run build
+
+# build for production and view the bundle analyzer report
+npm run build --report
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
-
+For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

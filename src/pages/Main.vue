@@ -1,16 +1,18 @@
 <template>
     <div class="container">
-        <Home></Home>
+        <Home>
+
+        </Home>
         <Intro></Intro>
     </div>
 </template>
 
 <script>
-  export default {
+export default {
     name: 'Main'
-  }
+}
 </script>
 
 <style lang="scss">
-    @import '../style/main.scss';
+@import '../style/main.scss';
 </style>

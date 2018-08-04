@@ -1,11 +1,8 @@
 <template>
-  <article class="main">
-    <section class="container">
-    </section>
-    <section class="brand color popular">
-
-    </section>
-  </article>
+    <div class="container">
+        <Home></Home>
+        <Intro></Intro>
+    </div>
 </template>
 
 <script>
@@ -13,3 +10,7 @@
     name: 'Main'
   }
 </script>
+
+<style lang="scss">
+    @import '../style/main.scss';
+</style>

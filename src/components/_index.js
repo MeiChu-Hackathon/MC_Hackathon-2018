@@ -1,6 +1,9 @@
-import HelloWorld from './HelloWorld'
-
+import MainNavbar from './Nav'
+import Intro from './intro'
+import Home from './home'
 
 export default {
-  HelloWorld
+  MainNavbar,
+  Intro,
+  Home
 }

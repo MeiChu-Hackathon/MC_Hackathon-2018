@@ -1,14 +1,13 @@
-<template lang="html">
-  <h1>Hello world</h1>
+<template>
+    <article class="sponsor">
+        <section class="container">
+            <h1>Here in Sponsor Page</h1>
+        </section>
+    </article>
 </template>
 
-
-<style lang="css">
-</style>
-
-
 <script>
-  export default {
+export default {
     name: 'Sponsor'
-  }
-</script>
+}
+</script> 

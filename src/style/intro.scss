@@ -1,0 +1,59 @@
+#intro{
+    position: relative;
+    overflow: hidden;
+}
+#particles_container{
+    position: relative;
+}
+.content_1{
+    position: relative;
+    width: 100%;
+    &:last-of-type{
+        padding-bottom: 10em;
+    }
+    .partical{
+        width: 40%;
+        text-align: justify;
+        padding: 3em;
+        letter-spacing: 1.2pt;
+        position: relative;
+        h1{
+            width: 600px;
+            margin: 0;
+            text-align: left;
+            border-bottom: solid 1px;
+            padding-bottom: 8px;
+            font-size: 24px;
+            font-weight: 900;
+            margin-bottom: .6em;
+        }
+        p{
+            margin: 0;
+            padding-top: .6em;
+            padding-bottom: .6em;
+            line-height: 1.6em;
+        }
+        b{
+            font-weight: 700;
+        }
+    }
+    .last_partical{
+        a{
+            text-decoration: none;
+            left: 50%;
+            transform: translate(-50%,0);
+            position: absolute;
+            z-index: 5;
+            font-weight: 900;
+            text-align: center;
+            transition: .5s;
+            border-radius: 15px;
+            width: 55%;
+            padding: .3em 0;
+
+            &:hover{
+                color: #f7f7f7;
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+* {
+    position: relative;
+    font-family: 'Quicksand', sans-serif, 微軟正黑體;
+}
+html, body {
+    margin: 0; padding: 0;
+}
+
+
+@import './landing.scss';
+@import './intro.scss';

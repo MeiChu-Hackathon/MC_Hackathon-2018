@@ -2,6 +2,7 @@
     <div class="container">
         <Landing></Landing>
         <Intro></Intro>
+        <Join_info></Join_info>
     </div>
 </template>
 

@@ -1,0 +1,58 @@
+#join_info {
+    .content_2{
+        position: relative;
+
+        .partical {
+            margin-bottom: 8em;
+            text-align: justify;
+            text-shadow: 0px 0px 15px #904bf4;
+            color: #eeecff;
+
+            h1 {
+                font-size: 28px;
+                font-weight: 900;
+                letter-spacing: 1.2pt;
+                margin-bottom: 24px;
+            }
+
+            p {
+                font-size: 18px;
+                letter-spacing: 1.2pt;
+                line-height: 1.6em;
+                font-weight: 500;
+            }
+
+
+            .sign_in {
+                text-align: center;
+                a {
+                    margin: 0 auto;
+                    margin-top: 2.2em;
+                    border: solid 1px #34dfa0;
+                    text-shadow: none;
+                    text-decoration: none;
+                    font-weight: 900;
+                    display: block;
+                    transition: .5s;
+                    border-radius: 15px;
+                    width: 50%;
+                    padding: .4em 0;
+                    color: #34dfa0;
+                    letter-spacing: 1.2pt;
+                }
+            }
+
+            ul {
+                letter-spacing: 1.2pt;
+                padding: 0;
+                list-style-position: outside;
+
+                li {
+                    margin-bottom: 1.6em;
+                }
+            }
+
+        }
+
+    }
+}

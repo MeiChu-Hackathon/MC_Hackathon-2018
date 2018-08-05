@@ -38,12 +38,10 @@
         .last_partical{
             a{
                 margin-top: 1.5em;
-                border: solid 1.5px #34dfa0;
+                border: solid 1px #34dfa0;
                 text-shadow: none;
                 text-decoration: none;
-                left: 50%;
-                transform: translate(-50%,0);
-                position: absolute;
+                display: block;
                 z-index: 5;
                 font-weight: 900;
                 text-align: center;

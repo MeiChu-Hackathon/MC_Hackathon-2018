@@ -1,59 +1,70 @@
-#intro{
-    position: relative;
-    overflow: hidden;
-}
-#particles_container{
-    position: relative;
-}
-.content_1{
-    position: relative;
-    width: 100%;
-    &:last-of-type{
-        padding-bottom: 10em;
-    }
-    .partical{
-        width: 40%;
-        text-align: justify;
-        padding: 3em;
-        letter-spacing: 1.2pt;
-        position: relative;
-        h1{
-            width: 600px;
-            margin: 0;
-            text-align: left;
-            border-bottom: solid 1px;
-            padding-bottom: 8px;
-            font-size: 24px;
-            font-weight: 900;
-            margin-bottom: .6em;
-        }
-        p{
-            margin: 0;
-            padding-top: .6em;
-            padding-bottom: .6em;
-            line-height: 1.6em;
-        }
-        b{
-            font-weight: 700;
-        }
-    }
-    .last_partical{
-        a{
-            text-decoration: none;
-            left: 50%;
-            transform: translate(-50%,0);
-            position: absolute;
-            z-index: 5;
-            font-weight: 900;
-            text-align: center;
-            transition: .5s;
-            border-radius: 15px;
-            width: 55%;
-            padding: .3em 0;
+// every style of intro page should be put in #particles_container
 
-            &:hover{
-                color: #f7f7f7;
+#particles_container{
+    margin-top: 6em;
+
+    .content_1{
+        width: 100%;
+        margin-bottom: 3em;
+        &:last-of-type{
+            padding-bottom: 10em;
+        }
+        .partical{
+            text-align: justify;
+            letter-spacing: 1.2pt;
+            position: relative;
+            text-shadow: 0px 0px 15px #904bf4;
+            color: #eeecff;
+
+            h1{
+                width: 600px;
+                margin: 0;
+                text-align: left;
+                font-size: 26px;
+                margin-bottom: 12px;
+            }
+            p{
+                font-size: 18px;
+                margin: 0;
+                padding-top: .6em;
+                padding-bottom: .6em;
+                line-height: 1.6em;
+                font-weight: 500;
+            }
+            b{
+                font-weight: 700;
+            }
+        }
+        .last_partical{
+            a{
+                margin-top: 1.5em;
+                border: solid 1.5px #34dfa0;
+                text-shadow: none;
+                text-decoration: none;
+                left: 50%;
+                transform: translate(-50%,0);
+                position: absolute;
+                z-index: 5;
+                font-weight: 900;
+                text-align: center;
+                transition: .5s;
+                border-radius: 15px;
+                width: 55%;
+                padding: .3em 0;
+                color: #34dfa0;
             }
         }
     }
+
+    .gear {
+        width: 400px;
+        transform: rotateZ(-20.45deg);
+        position: absolute;
+        right: 50px;
+        top: 200px;
+        img {
+            width: 100%;
+        }
+    }
+
 }

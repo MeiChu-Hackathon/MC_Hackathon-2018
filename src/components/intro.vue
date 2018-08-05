@@ -1,7 +1,10 @@
 <template>
     <div id="particles_container">
+        <div class="gear">
+            <img src="../assets/gear.png">
+        </div>
         <div class="content_1">
-            <div class="partical">
+            <div class="partical col-md-6">
                 <h1>梅竹黑客松有什麼不一樣？</h1>
                 <div class ="partical_block">
                     <p>目前坊間的類似活動，分為兩種：「傳統黑客松」以及「企業自行舉辦的黑客松」傳統黑客松由參加隊伍發想提案，擁有近乎絕對的自由，但提供的協助與引導少，不利經驗較少的學生團隊，完成作品的門檻提高，構想容易偏離現實考量，落入為創新而創新的迷思；</p>
@@ -10,7 +13,7 @@
             </div>
         </div>
         <div class="content_1">
-            <div class="partical last_partical">
+            <div class="partical col-md-6 last_partical">
                 <h1>參加梅竹黑客松的好處</h1>
                 <div class ="partical_block">
                     <p>此活動是與企業合作出資源(硬體或API等)的方式進行，參加者能與企業在第一線接觸交流，並且提升其技術力。只要完整參與兩天一夜的活動，一律授予梅竹黑客松專屬紀念品和活動參與證書！另外，主辦單位將據依當天參與者的整體表現，選出幾組表現優秀隊伍 (視報名人數情況調整)額外頒授獎勵。</p>

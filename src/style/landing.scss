@@ -1,0 +1,12 @@
+// every style of landing page should be put in #landing.
+
+#landing {
+    height: 900px;
+
+    h1 {
+        text-align: center;
+        color: #f7f7f7;
+        top: 50%;
+        transform: translateY(-150%);
+    }
+}

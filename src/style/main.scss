@@ -1,11 +1,26 @@
 * {
     position: relative;
     font-family: 'Quicksand', sans-serif, 微軟正黑體;
+
 }
 html, body {
     margin: 0; padding: 0;
+    background-image: url('../assets/BG1.png');
+}
+
+@media (min-width: 1200px){
+    .container {
+        max-width: 1200px!important;
+    }
 }
 
 
+
+// bootstrap
+@import "custom";
+@import "~bootstrap/scss/bootstrap";
+
+
+// custom
 @import './landing.scss';
 @import './intro.scss';

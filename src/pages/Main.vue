@@ -1,8 +1,6 @@
 <template>
     <div class="container">
-        <Home>
-
-        </Home>
+        <Landing></Landing>
         <Intro></Intro>
     </div>
 </template>

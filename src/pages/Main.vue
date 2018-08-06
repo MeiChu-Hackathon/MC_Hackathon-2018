@@ -3,6 +3,7 @@
         <Landing></Landing>
         <Intro></Intro>
         <Join_info></Join_info>
+        <Schedule></Schedule>
     </div>
 </template>
 

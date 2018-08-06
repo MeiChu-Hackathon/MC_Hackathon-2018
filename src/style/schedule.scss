@@ -1,0 +1,100 @@
+#schedule{
+    padding: 4em 5em 3em 5em;
+    color: #f7f7f7;
+    h1{
+        font-family: 'roboto', sans-serif;
+        font-size: 54px;
+        text-align: left;
+        font-weight: regular;
+        color: #f7f7f7;
+        padding-bottom: 1em;
+        letter-spacing: 1.2px;
+        margin-bottom: 1em;
+
+        b{
+            font-family: 'roboto', sans-serif;
+            font-weight: regular;
+            padding-bottom: 2px;
+            border-bottom: solid 8px #1DCB8B;
+        }
+    }
+
+    .day{
+        position: absolute;
+        font-weight: 900;
+        top: -3em;
+        color: #f7f7f7;
+        font-size: 22px;
+        transform: translate(-45%,0);
+    }
+
+    .sche_cont{
+        padding-bottom: 8em;
+        .sche{
+            flex: 40;
+            -webkit-flex: 40;
+            margin-top: 3em;
+            margin: 0 30px;
+            position: relative;
+            display: inline-block;
+
+            .event{
+                position: relative;
+                display: inline-block;
+                color: #f7f7f7;
+                width: 100%;
+                border-left: solid 2px #1DCB8B;
+                padding-left: 1em;
+
+                .schedule_card{
+                    transform-style: preserve-3d;
+                    padding: 15px 15px;
+                    margin: 10px 0;
+                    border: solid 1.5px #1DCB8B;
+
+                }
+                .event_text{
+                    perspective: 1000px;
+                    position: relative;
+                    font-weight: 700;
+                    letter-spacing: 1.2px;
+                    font-size: 1em;
+                    padding: 8px 12px;
+                    margin: 0;
+
+                    &:last-of-type{
+                        padding-bottom: 2em;
+                    }
+                    .time_text{
+                        position: absolute;
+                        top: 0em;
+                        left: -31px;
+                        transform: translate(-100%,-50%);
+                        font-size: .6em;
+                        letter-spacing: 3px;
+                        margin: 0;
+
+                        &::after{
+                            content: '';
+                            position: absolute;
+                            width: 12px;
+                            height: 12px;
+                            border-radius: 100%;
+                            border: solid 1.5px #1DCB8B;
+                            background: #0c0837;
+                            top: 17px;
+                            right: 0px;
+                            transform: translate(17px, -50%);
+                        }
+                        b{
+                            margin: 0;
+                            font-weight: 900;
+                            vertical-align: baseline;
+                            font-size: 1.5em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

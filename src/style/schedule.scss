@@ -44,15 +44,17 @@
                 position: relative;
                 display: inline-block;
                 color: #f7f7f7;
-                width: 100%;
+                width: 90%;
+                min-width: 290px;
                 border-left: solid 2px #1DCB8B;
                 padding-left: 1em;
 
                 .schedule_card{
                     transform-style: preserve-3d;
-                    padding: 15px 15px;
+                    padding: 12px 12px;
+                    font-size: 18px;
                     margin: 10px 0;
-                    border: solid 1.5px #1DCB8B;
+                    border: solid 2px #1DCB8B;
 
                 }
                 .event_text{

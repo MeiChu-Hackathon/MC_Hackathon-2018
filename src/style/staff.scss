@@ -1,0 +1,81 @@
+#staff {
+    padding: 4em 5em 3em 5em;
+    color: #f7f7f7;
+
+    h1{
+        font-family: 'roboto', sans-serif;
+        font-size: 54px;
+        text-align: left;
+        font-weight: regular;
+        color: #f7f7f7;
+        padding-bottom: 1em;
+        letter-spacing: 1.2px;
+        margin-bottom: 1em;
+
+        b{
+            font-family: 'roboto', sans-serif;
+            padding-bottom: 2px;
+            border-bottom: solid 8px #1DCB8B;
+        }
+    }
+
+    .group {
+        position: relative;
+        padding: 0 3em;
+        margin: 0;
+        margin-bottom: 5em;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+        h2 {
+            position: absolute;
+            font-family: 思源黑體, 微軟正黑體;
+            top: 12px;
+            width: 1.1em;
+            font-size: 1.2em;
+            left: 0;
+            line-height: 1.3em;
+        }
+
+        .staff_card {
+            margin: 0 .6em 1.6em .6em;
+            width: 80px;
+        }
+
+        .staff_photo {
+            width: 80px;
+            height: 80px;
+            overflow: hidden;
+            border-radius: 15px;
+            border: solid 1px rgba(0, 0, 0, 0.2);
+        }
+
+        img {
+            height: 75px;
+            position: absolute;
+            left: 50%; top: 50%;
+            transform: translate(-50%, -45%);
+        }
+
+        p {
+            font-size: 18px;
+            text-align: center;
+            margin-top: .6em;
+            font-weight: 700;
+            letter-spacing: 1.2px;
+            word-wrap: break-word;
+        }
+
+        .staff_photo {
+            width: 80px;
+            height: 80px;
+            overflow: hidden;
+            border-radius: 50%;
+            border: solid 1px;
+        }
+    }
+
+
+
+}

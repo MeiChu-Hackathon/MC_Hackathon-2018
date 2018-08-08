@@ -32,6 +32,6 @@
 
 <script>
 export default {
-  name: 'Sponsor'
+  name: 'sponsor-1'
 }
 </script>

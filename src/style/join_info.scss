@@ -13,13 +13,13 @@
             h1 {
                 font-size: 28px;
                 font-weight: 900;
-                letter-spacing: 1.2pt;
+                letter-spacing: $letter-spacing;
                 margin-bottom: 24px;
             }
 
             p {
                 font-size: 18px;
-                letter-spacing: 1.2pt;
+                letter-spacing: $letter-spacing;
                 line-height: 1.6em;
                 font-weight: 500;
             }
@@ -40,12 +40,12 @@
                     width: 50%;
                     padding: .4em 0;
                     color: #34dfa0;
-                    letter-spacing: 1.2pt;
+                    letter-spacing: $letter-spacing;
                 }
             }
 
             ul {
-                letter-spacing: 1.2pt;
+                letter-spacing: $letter-spacing;
                 padding: 0;
                 list-style-position: outside;
 

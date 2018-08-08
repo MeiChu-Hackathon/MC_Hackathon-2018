@@ -15,6 +15,9 @@ html, body {
 }
 
 
+// globle var
+$letter-spacing: 2px;
+$light-green: #1DCB8B;
 
 // bootstrap
 @import "custom";
@@ -26,4 +29,5 @@ html, body {
 @import 'intro.scss';
 @import 'join_info.scss';
 @import 'schedule.scss';
-@import 'staff.scss'
+@import 'staff.scss';
+@import "sponsor.scss";

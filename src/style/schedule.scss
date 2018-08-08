@@ -10,7 +10,7 @@
         font-weight: regular;
         color: #f7f7f7;
         padding-bottom: 1em;
-        letter-spacing: 1.2px;
+        letter-spacing: $letter-spacing;
         margin-bottom: 1em;
 
         b{
@@ -61,7 +61,7 @@
                     perspective: 1000px;
                     position: relative;
                     font-weight: 700;
-                    letter-spacing: 1.2px;
+                    letter-spacing: $letter-spacing;
                     font-size: 1em;
                     padding: 8px 12px;
                     margin: 0;
@@ -75,7 +75,7 @@
                         left: -31px;
                         transform: translate(-100%,-50%);
                         font-size: .6em;
-                        letter-spacing: 3px;
+                        letter-spacing: $letter-spacing;
                         margin: 0;
 
                         &::after{

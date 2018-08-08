@@ -9,7 +9,7 @@
         font-weight: regular;
         color: #f7f7f7;
         padding-bottom: 1em;
-        letter-spacing: 1.2px;
+        letter-spacing: $letter-spacing;
         margin-bottom: 1em;
 
         b{
@@ -63,7 +63,7 @@
             text-align: center;
             margin-top: .6em;
             font-weight: 700;
-            letter-spacing: 1.2px;
+            letter-spacing: $letter-spacing;
             word-wrap: break-word;
         }
 

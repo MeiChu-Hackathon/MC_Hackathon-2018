@@ -11,7 +11,7 @@
         }
         .partical{
             text-align: justify;
-            letter-spacing: 1.2pt;
+            letter-spacing: $letter-spacing;
             position: relative;
             text-shadow: 0px 0px 15px #904bf4;
             color: #eeecff;
@@ -50,7 +50,7 @@
                 width: 50%;
                 padding: .4em 0;
                 color: #34dfa0;
-                letter-spacing: 1.2pt
+                letter-spacing: $letter-spacing
             }
         }
     }

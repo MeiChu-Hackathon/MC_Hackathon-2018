@@ -1,12 +1,11 @@
-
 import Vue from 'vue'
 import App from './App'
 import router from './router'
 import Components from './components/_index'
 import 'bootstrap';
+import VueAnime from 'vue-animejs';
 
-Vue.config.productionTip = false
-
+Vue.use(VueAnime)
 Object.keys(Components).forEach(key => {
   Vue.component(key, Components[key])
 })

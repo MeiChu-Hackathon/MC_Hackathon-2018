@@ -13,7 +13,3 @@ export default {
     name: 'Main'
 }
 </script>
-
-<style lang="scss">
-@import '../style/main.scss';
-</style>

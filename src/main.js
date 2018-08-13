@@ -2,8 +2,8 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import Components from './components/_index'
-import 'bootstrap';
 import VueAnime from 'vue-animejs';
+import 'bootstrap';
 import '@/style/main.scss'
 
 Vue.use(VueAnime)

@@ -7,6 +7,9 @@
       <div class="line"></div>
       <h3 style="letter-spacing: 2px;">交大工程四館</h3>
     </div>
+    <div class="landing-lines">
+      <img v-for="id in 4" :key="id" :class="`line-${id}`" class="landing-line" src="@/assets/landing-line.svg" width="40%"/>
+    </div>
     <div :class="`item-${id}`" v-for="(item, id) in 5" :key="id" class="oval"></div>
     <div class="planet yellow-planet"><img src="@/assets/yellow_planet.svg" width="70px"/></div>
     <div class="planet pink-planet"  ><img src="@/assets/pink_planet.svg"   width="70px"/></div>
@@ -14,6 +17,10 @@
     <div class="planet purple-planet"><img src="@/assets/purple_planet.svg" width="70px"/></div>
     <div class="sun"></div>
     <div class="sun-glow"></div>
+    <div class="bottom-hint">
+      <div class="rectangle"></div>
+      <div class="rec-border-animation"></div>
+    </div>
   </div>
 </template>
 
@@ -70,6 +77,35 @@ $glowYellow: rgb(255,231,138);
       height: 3px;
       background: #fff;
       margin: 10px 0;
+    }
+  }
+  .landing-lines {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    .landing-line {
+      position: absolute;
+      opacity: .4;
+      &.line-1 {
+        left: -85px;
+        top: 75px;
+      }
+      &.line-2 {
+        transform: rotateX(180deg);
+        left: -85px;
+        bottom: 100px;
+        
+      }
+      &.line-3 {
+        transform: rotateY(180deg);
+        right: -85px;
+        top: 75px;
+      }
+      &.line-4 {
+        transform: rotateX(180deg) rotateY(180deg);
+        right: -85px;
+        bottom: 100px;
+      }
     }
   }
   .oval {
@@ -132,6 +168,43 @@ $glowYellow: rgb(255,231,138);
         box-shadow: 0px 0px 40px 10px rgb(101,74,127);
       }
     }
+  }
+  .bottom-hint {
+    position: absolute;
+    width: 60%;
+    height: 100px;
+    bottom: 1%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    .rectangle {
+      width: 10px;
+      height: 10px;
+      background-color: white;
+      @extend %centerObject;
+      transform: translate(-50%, -50%);
+      box-shadow: 0px 0px 4px 4px white;
+    }
+    .rec-border-animation {
+      width: 50px;
+      height: 50px;
+      border: 2px solid white;
+      position: absolute;
+      top: calc(50% - 25px);
+      left: calc(50% - 25px);
+      animation: scale 4s cubic-bezier(.68,.05,.22,.99) .9s infinite;
+      cursor: pointer;
+    }
+  }
+}
+
+@keyframes scale {
+  from {
+    transform: scale(.3);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1);
+    opacity: 0;
   }
 }
 </style>

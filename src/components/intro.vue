@@ -29,24 +29,17 @@
         </div>
     </div>
 </template>
-
 <script>
+import sr from '../js/sr.js';
 export default {
     name: 'intro',
     mounted() {
-        let paragraph = this.$anime({
-                targets: 'p',
-                delay: function(el, i){ return i * 200},
-                opacity: [0, 1],
-                translateY: [10, 0],
-                duration: 1000,
-                easing: [0.8, 0, 0.2, 0.1],
-                loop: false
-        });
+
+
         let titleAnime = this.$anime.timeline({
             easing: [0.8, 0, 0.2, 1],
+            autoplay: false
         });
-
         titleAnime
             .add({
                 targets: '.mask',
@@ -68,6 +61,19 @@ export default {
                 offset: '-=600'
 
             })
+        sr.reveal('.partical_block', {
+            distance: '10px',
+            duration: '800',
+            delay: 500
+        });
+        sr.reveal('.title_block', {
+            distance: '0px',
+            opacity: '1',
+            duration: '0',
+            afterReveal: function(el){
+                titleAnime.play()
+            }
+        })
     },
 }
 

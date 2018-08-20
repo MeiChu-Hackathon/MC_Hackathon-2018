@@ -20,6 +20,9 @@
     <div class="bottom-hint">
       <div class="rectangle"></div>
       <div class="rec-border-animation"></div>
+      <img class="line" src="@/assets/landing-bottom-line.svg" width="180px"/>
+      <img class="rocket" src="@/assets/rocket.svg" width="20px"/>
+      <span class="hint-text">現在位置</span>
     </div>
   </div>
 </template>
@@ -193,6 +196,27 @@ $glowYellow: rgb(255,231,138);
       left: calc(50% - 25px);
       animation: scale 4s cubic-bezier(.68,.05,.22,.99) .9s infinite;
       cursor: pointer;
+    }
+    .line {
+      position: absolute;
+      top: calc(50% + 10px);
+      left: calc(50% + 10px);
+      opacity: .4;
+    }
+    .rocket {
+      position: absolute;
+      transform: rotate(-45deg);
+      left: calc(50% + 40px);
+      top: calc(50% + 5px);
+    }
+    .hint-text {
+      position: absolute;
+      left: calc(50% + 70px);
+      top: calc(50%);
+      font-size: 1.3em;
+      color: white;
+      letter-spacing: 5px;
+      text-shadow: 0px 0px 4px white;
     }
   }
 }

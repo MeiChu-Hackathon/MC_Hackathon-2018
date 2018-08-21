@@ -1,5 +1,5 @@
 <template>
-  <div id="landing">
+  <div ref="landing" id="landing">
     <div class="title-text">
       <h3>10/<span style="font-size: .7em;">28.29</span></h3>
       <h2>MEICHU</h2>
@@ -11,15 +11,15 @@
       <img v-for="id in 4" :key="id" :class="`line-${id}`" class="landing-line" src="@/assets/landing-line.svg" width="30%"/>
     </div>
     <div :class="`item-${id}`" v-for="(item, id) in 5" :key="id" class="oval"></div>
-    <div class="planet yellow-planet"><img src="@/assets/yellow_planet.svg" width="70px"/></div>
+    <div class="planet yellow-planet"><img src="@/assets/yellow_planet.svg" width="80px"/></div>
     <div class="planet pink-planet"  ><img src="@/assets/pink_planet.svg"   width="70px"/></div>
-    <div class="planet blue-planet"  ><img src="@/assets/blue_planet.svg"   width="70px"/></div>
+    <div class="planet blue-planet"  ><img src="@/assets/blue_planet.svg"   width="50px"/></div>
     <div class="planet purple-planet"><img src="@/assets/purple_planet.svg" width="70px"/></div>
     <div class="sun"></div>
     <div class="sun-glow"></div>
     <div class="bottom-hint">
-      <div class="rectangle"></div>
-      <div class="rec-border-animation"></div>
+      <div @click="moveTrigger" class="rectangle"></div>
+      <div @click="moveTrigger" class="rec-border-animation"></div>
       <img class="line" src="@/assets/landing-bottom-line.svg" width="180px"/>
       <img class="rocket" src="@/assets/rocket.svg" width="20px"/>
       <span class="hint-text">現在位置</span>
@@ -28,9 +28,17 @@
 </template>
 
 <script>
-  export default {
-    name: 'landing',
+import SmoothScroll from 'smooth-scroll';
+export default {
+  name: 'landing',
+  methods: {
+    moveTrigger() {
+      const { landing } = this.$refs;
+      const scroll = new SmoothScroll();
+      scroll.animateScroll(landing.clientHeight + 50,{},{ speed: 2000, easing: 'easeInOutQuad' });
+    }
   }
+}
 </script>
 
 
@@ -116,11 +124,11 @@ $glowYellow: rgb(255,231,138);
     @extend %centerObject;
     transform: translate(-50%, -50%) scale(1, .7);
     border-radius: 60%;
-    border: dashed rgb(179,179,179) 1px;
+    border: dashed rgb(109,91,136) 1px;
     @for $i from 1 through 5 {
       &.item-#{$i} {
-        width: (110% - $i*18%);
-        height: (80% - $i*12%);
+        width: (100% - $i*18%);
+        height: (70% - $i*12%);
       }
     }
   }
@@ -134,8 +142,6 @@ $glowYellow: rgb(255,231,138);
   }
   .planet {
     position: absolute;
-    width: 70px;
-    height: 70px;
     &:before {
         content: '';
         @extend %centerObject;
@@ -145,29 +151,29 @@ $glowYellow: rgb(255,231,138);
         border-radius: 50%;
       }
     &.yellow-planet {
-      left: 14%;
-      top: 28%;
+      left: 9%;
+      top: 35%;
       &:before {
         box-shadow: 0px 0px 40px 10px rgb(255,231,138);
       }
     }
     &.pink-planet {
-      left: 24%;
+      left: 21%;
       top: 53%;
       &:before {
         box-shadow: 0px 0px 40px 10px rgb(210,53,251);
       }
     }
     &.blue-planet {
-      left: 60%;
-      top: 53%;
+      left: 64%;
+      top: 54%;
       &:before {
         box-shadow: 0px 0px 40px 10px rgb(151,251,244);
       }
     }
     &.purple-planet {
-      left: 83%;
-      top: 43%;
+      left: 87%;
+      top: 46%;
       &:before {
         box-shadow: 0px 0px 40px 10px rgb(101,74,127);
       }

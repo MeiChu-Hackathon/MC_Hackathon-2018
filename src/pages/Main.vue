@@ -1,11 +1,13 @@
 <template>
+  <div>
+    <Landing></Landing>
     <div class="container">
-        <Landing></Landing>
         <Intro></Intro>
         <Join_info></Join_info>
         <Schedule></Schedule>
         <Staff></Staff>
     </div>
+  </div>
 </template>
 
 <script>

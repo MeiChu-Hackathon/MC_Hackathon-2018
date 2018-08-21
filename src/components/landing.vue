@@ -1,14 +1,14 @@
 <template>
-  <div id="landing" class="container">
+  <div id="landing">
     <div class="title-text">
-      <h3>10/28.29</h3>
+      <h3>10/<span style="font-size: .7em;">28.29</span></h3>
       <h2>MEICHU</h2>
       <h2>HACKATHON</h2>
       <div class="line"></div>
-      <h3 style="letter-spacing: 2px;">交大工程四館</h3>
+      <h3>交大工程四館</h3>
     </div>
     <div class="landing-lines">
-      <img v-for="id in 4" :key="id" :class="`line-${id}`" class="landing-line" src="@/assets/landing-line.svg" width="40%"/>
+      <img v-for="id in 4" :key="id" :class="`line-${id}`" class="landing-line" src="@/assets/landing-line.svg" width="30%"/>
     </div>
     <div :class="`item-${id}`" v-for="(item, id) in 5" :key="id" class="oval"></div>
     <div class="planet yellow-planet"><img src="@/assets/yellow_planet.svg" width="70px"/></div>
@@ -70,6 +70,7 @@ $glowYellow: rgb(255,231,138);
     text-shadow: 0px 0px 18px rgb(250,250,250);
     h3 {
       font-size: 1em;
+      letter-spacing: 2px;
     }
     h2 {
       font-family: 'Fugaz One', cursive;
@@ -90,24 +91,24 @@ $glowYellow: rgb(255,231,138);
       position: absolute;
       opacity: .4;
       &.line-1 {
-        left: -85px;
-        top: 75px;
+        left: -15px;
+        top: 8%;
       }
       &.line-2 {
         transform: rotateX(180deg);
-        left: -85px;
-        bottom: 100px;
+        left: -15px;
+        bottom: 13%;
         
       }
       &.line-3 {
         transform: rotateY(180deg);
-        right: -85px;
-        top: 75px;
+        right: -15px;
+        top: 8%;
       }
       &.line-4 {
         transform: rotateX(180deg) rotateY(180deg);
-        right: -85px;
-        bottom: 100px;
+        right: -15px;
+        bottom: 13%;
       }
     }
   }

@@ -1,5 +1,5 @@
 <template>
-    <div id="particles_container">
+    <div id="intro" class="container">
         <div class="gear">
             <img src="../assets/gear.png">
         </div>
@@ -70,6 +70,7 @@ export default {
             distance: '0px',
             opacity: '1',
             duration: '0',
+            reset: true,
             afterReveal: function(el){
                 titleAnime.play()
             }

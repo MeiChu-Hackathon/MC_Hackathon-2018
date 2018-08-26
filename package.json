@@ -10,7 +10,6 @@
     "build": "node build/build.js"
   },
   "dependencies": {
-    "smooth-scroll": "^14.2.1",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },
@@ -49,6 +48,7 @@
     "scrollreveal": "^4.0.0",
     "semver": "^5.3.0",
     "shelljs": "^0.7.6",
+    "smooth-scroll": "^14.2.1",
     "uglifyjs-webpack-plugin": "^1.1.1",
     "url-loader": "^0.5.8",
     "vue-animejs": "^1.0.1",

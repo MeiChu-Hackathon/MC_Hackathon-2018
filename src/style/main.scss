@@ -6,6 +6,7 @@
 html, body {
     margin: 0; padding: 0;
     background-image: url('../assets/BG1.png');
+    overflow-x: hidden;
 }
 
 @media (min-width: 1200px){

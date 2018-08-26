@@ -106,7 +106,7 @@ $glowYellow: rgb(255,231,138);
         transform: rotateX(180deg);
         left: -15px;
         bottom: 13%;
-        
+
       }
       &.line-3 {
         transform: rotateY(180deg);
@@ -152,7 +152,7 @@ $glowYellow: rgb(255,231,138);
       }
     &.yellow-planet {
       left: 9%;
-      top: 35%;
+      top: 38%;
       &:before {
         box-shadow: 0px 0px 40px 10px rgb(255,231,138);
       }
@@ -160,19 +160,20 @@ $glowYellow: rgb(255,231,138);
     &.pink-planet {
       left: 21%;
       top: 53%;
+      filter: drop-shadow(0px 0px 10px rgba(210, 53, 251, 0.8));
       &:before {
-        box-shadow: 0px 0px 40px 10px rgb(210,53,251);
+        // box-shadow: 0px 0px 40px 10px rgb(210,53,251);
       }
     }
     &.blue-planet {
-      left: 64%;
-      top: 54%;
+      left: 64.5%;
+      top: 55.5%;
       &:before {
         box-shadow: 0px 0px 40px 10px rgb(151,251,244);
       }
     }
     &.purple-planet {
-      left: 87%;
+      left: 88.5%;
       top: 46%;
       &:before {
         box-shadow: 0px 0px 40px 10px rgb(101,74,127);
@@ -220,7 +221,7 @@ $glowYellow: rgb(255,231,138);
       position: absolute;
       left: calc(50% + 70px);
       top: calc(50%);
-      font-size: 1.3em;
+      font-size: 1em;
       color: white;
       letter-spacing: 5px;
       text-shadow: 0px 0px 4px white;

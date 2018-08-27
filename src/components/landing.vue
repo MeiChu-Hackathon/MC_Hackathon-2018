@@ -11,10 +11,10 @@
       <img v-for="id in 4" :key="id" :class="`line-${id}`" class="landing-line" src="@/assets/landing-line.svg" width="30%"/>
     </div>
     <div :class="`item-${id}`" v-for="(item, id) in 5" :key="id" class="oval"></div>
-    <div class="planet yellow-planet"><img src="@/assets/yellow_planet.svg" width="80px"/></div>
-    <div class="planet pink-planet"  ><img src="@/assets/pink_planet.svg"   width="70px"/></div>
-    <div class="planet blue-planet"  ><img src="@/assets/blue_planet.svg"   width="50px"/></div>
-    <div class="planet purple-planet"><img src="@/assets/purple_planet.svg" width="70px"/></div>
+    <a target="_blank" href="#/sponsor-1" class="planet yellow-planet"><img src="@/assets/yellow_planet.svg" width="80px"/></a>
+    <a target="_blank" href="#/sponsor-2" class="planet pink-planet"  ><img src="@/assets/pink_planet.svg"   width="70px"/></a>
+    <a target="_blank" href="#/sponsor-3" class="planet blue-planet"  ><img src="@/assets/blue_planet.svg"   width="50px"/></a>
+    <a target="_blank" href="#/sponsor-4" class="planet purple-planet"><img src="@/assets/purple_planet.svg" width="70px"/></a>
     <div class="sun"></div>
     <div class="sun-glow"></div>
     <div class="bottom-hint">
@@ -35,7 +35,7 @@ export default {
     moveTrigger() {
       const { landing } = this.$refs;
       const scroll = new SmoothScroll();
-      scroll.animateScroll(landing.clientHeight + 50,{},{ speed: 2000, easing: 'easeInOutQuad' });
+      scroll.animateScroll(landing.clientHeight + 50,{},{ speed: 1500, easing: 'easeInOutQuad' });
     }
   }
 }
@@ -142,6 +142,7 @@ $glowYellow: rgb(255,231,138);
   }
   .planet {
     position: absolute;
+    cursor: pointer;
     &:before {
         content: '';
         @extend %centerObject;
@@ -191,18 +192,20 @@ $glowYellow: rgb(255,231,138);
       width: 10px;
       height: 10px;
       background-color: white;
-      @extend %centerObject;
-      transform: translate(-50%, -50%);
-      box-shadow: 0px 0px 4px 4px white;
+      margin: 0 auto;
+      transform-origin: center;
+      top: calc(50% - 20px);
+      animation: recScale 3s cubic-bezier(.68,.05,.22,.99) infinite;
+      // box-shadow: 0px 0px 4px 4px white;
     }
     .rec-border-animation {
       width: 50px;
       height: 50px;
       border: 2px solid white;
       position: absolute;
-      top: calc(50% - 25px);
+      top: calc(50% - 40px);
       left: calc(50% - 25px);
-      animation: scale 4s cubic-bezier(.68,.05,.22,.99) .9s infinite;
+      animation: scale 3s cubic-bezier(.68,.05,.22,.99) 0.4s infinite;
       cursor: pointer;
     }
     .line {
@@ -230,13 +233,26 @@ $glowYellow: rgb(255,231,138);
 }
 
 @keyframes scale {
-  from {
-    transform: scale(.3);
-    opacity: 1;
+  0% {
+    transform: scale(.3) rotateZ(0deg);
   }
-  to {
-    transform: scale(1);
-    opacity: 0;
+  50% {
+    transform: scale(.7) rotateZ(90deg);
   }
+  100% {
+    transform: scale(.3) rotateZ(180deg);
+  }
+}
+
+@keyframes recScale {
+    0% {
+        transform: scale(3) rotateZ(0deg);
+    }
+    50% {
+        transform: scale(1) rotateZ(90deg);
+    }
+    100% {
+        transform: scale(3) rotateZ(180deg);
+    }
 }
 </style>

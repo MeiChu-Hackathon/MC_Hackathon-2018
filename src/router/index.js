@@ -17,6 +17,31 @@ export default new Router({
             component: Main
         },
         {
+            path: '/landing',
+            name: 'Main',
+            component: Main
+        },
+        {
+            path: '/intro',
+            name: 'Main',
+            component: Main
+        },
+        {
+            path: '/join_info',
+            name: 'Main',
+            component: Main
+        },
+        {
+            path: '/schedule',
+            name: 'Main',
+            component: Main
+        },
+        {
+            path: '/staff',
+            name: 'Main',
+            component: Main
+        },
+        {
             path: '/join',
             name: 'Join',
             component: Join

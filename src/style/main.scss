@@ -5,10 +5,11 @@
 }
 html, body {
     margin: 0; padding: 0;
-    background-image: url('../assets/BG1.png');
     overflow-x: hidden;
 }
-
+body {
+    background-image: url('https://i.imgur.com/w8PZ2l1.png');
+}
 @media (min-width: 1200px){
     .container {
         max-width: 1200px!important;

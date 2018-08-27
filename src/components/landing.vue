@@ -205,7 +205,7 @@ $glowYellow: rgb(255,231,138);
       position: absolute;
       top: calc(50% - 40px);
       left: calc(50% - 25px);
-      animation: scale 3s cubic-bezier(.68,.05,.22,.99) 0.4s infinite;
+      animation: scale 3s cubic-bezier(.68,.05,.22,.99) infinite;
       cursor: pointer;
     }
     .line {

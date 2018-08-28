@@ -38,7 +38,7 @@ export default {
 
         let titleAnime = this.$anime.timeline({
             easing: [0.8, 0, 0.2, 1],
-            autoplay: false
+            autoplay: false,
         });
         titleAnime
             .add({
@@ -64,7 +64,7 @@ export default {
         sr.reveal('.partical_block', {
             distance: '10px',
             duration: '800',
-            delay: 500
+            delay: 500,
         });
         sr.reveal('.title_block', {
             distance: '0px',

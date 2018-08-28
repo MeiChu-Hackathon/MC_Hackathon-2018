@@ -102,3 +102,40 @@
         }
     }
 }
+@media all and (max-width: 480px) {
+    #schedule {
+        padding: 3em 1.2em;
+        h1 {
+            font-size: 32px;
+            margin-bottom: .5em;
+        }
+        .sche_cont {
+            font-size: 16px;
+            .sche {
+                margin-top: 5em;
+                .event {
+                    padding-left: 1.2em;
+                    min-width: 13em;
+                    margin-left: 1.5em;
+                    .event_text {
+                        font-size: .8em;
+                        padding: 3px 6px;
+                        p {
+                            font-size: 15px;
+                            padding: 10px 12px;
+                            margin: 5px 0;
+                        }
+                        .time_text {
+                            padding-right: 4px;
+                        }
+                    }
+                }
+            }
+            .day {
+                top: -3em;
+                left: 2em;
+                font-size: 1.2em;
+            }
+        }
+    }
+}

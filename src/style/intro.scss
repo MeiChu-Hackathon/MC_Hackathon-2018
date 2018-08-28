@@ -67,7 +67,6 @@
             }
         }
     }
-
     .gear {
         width: 400px;
         transform: rotateZ(-20.45deg);
@@ -79,4 +78,23 @@
         }
     }
 
+
+    @media all and (max-width: 480px) {
+        .content_1 {
+            .mask {
+                display: none;
+            }
+            .title {
+                font-size: 1.2em!important;
+            }
+            .partical_block {
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+        .gear {
+            display: none;
+        }
+    }
 }

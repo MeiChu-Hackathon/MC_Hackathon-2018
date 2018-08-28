@@ -1,20 +1,19 @@
 <template>
   <div ref="landing" id="landing">
     <div class="title-text">
-      <h3>10/<span style="font-size: .7em;">28.29</span></h3>
       <h2>MEICHU</h2>
       <h2>HACKATHON</h2>
       <div class="line"></div>
-      <h3>交大工程四館</h3>
+      <h3>10/<span style="font-size: .7em;">28.29</span></h3>
     </div>
     <div class="landing-lines">
       <img v-for="id in 4" :key="id" :class="`line-${id}`" class="landing-line" src="@/assets/landing-line.svg" width="30%"/>
     </div>
     <div :class="`item-${id}`" v-for="(item, id) in 5" :key="id" class="oval"></div>
-    <a target="_blank" href="#/sponsor-1" class="planet yellow-planet"><img src="@/assets/yellow_planet.svg" width="80px"/></a>
-    <a target="_blank" href="#/sponsor-2" class="planet pink-planet"  ><img src="@/assets/pink_planet.svg"   width="70px"/></a>
-    <a target="_blank" href="#/sponsor-3" class="planet blue-planet"  ><img src="@/assets/blue_planet.svg"   width="50px"/></a>
-    <a target="_blank" href="#/sponsor-4" class="planet purple-planet"><img src="@/assets/purple_planet.svg" width="70px"/></a>
+    <a target="_blank" href="#/sponsor-1" class="planet yellow-planet"><img src="@/assets/yellow_planet.svg"/></a>
+    <a target="_blank" href="#/sponsor-2" class="planet pink-planet"  ><img src="@/assets/pink_planet.svg"  /></a>
+    <a target="_blank" href="#/sponsor-3" class="planet blue-planet"  ><img src="@/assets/blue_planet.svg"  /></a>
+    <a target="_blank" href="#/sponsor-4" class="planet purple-planet"><img src="@/assets/purple_planet.svg"/></a>
     <div class="sun"></div>
     <div class="sun-glow"></div>
     <div class="bottom-hint">
@@ -63,173 +62,216 @@ $glowYellow: rgb(255,231,138);
 }
 
 #landing {
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-  .title-text {
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-shadow: 0px 0px 18px rgb(250,250,250);
-    h3 {
-      font-size: 1em;
-      letter-spacing: 2px;
-    }
-    h2 {
-      font-family: 'Fugaz One', cursive;
-      margin: 1px 0;
-    }
-    .line {
-      width: 10%;
-      height: 3px;
-      background: #fff;
-      margin: 10px 0;
-    }
-  }
-  .landing-lines {
+    width: 100vw;
+    height: 100vh;
     position: relative;
-    width: 100%;
-    height: 100%;
-    .landing-line {
-      position: absolute;
-      opacity: .4;
-      &.line-1 {
-        left: -15px;
-        top: 8%;
-      }
-      &.line-2 {
-        transform: rotateX(180deg);
-        left: -15px;
-        bottom: 13%;
-
-      }
-      &.line-3 {
-        transform: rotateY(180deg);
-        right: -15px;
-        top: 8%;
-      }
-      &.line-4 {
-        transform: rotateX(180deg) rotateY(180deg);
-        right: -15px;
-        bottom: 13%;
-      }
-    }
-  }
-  .oval {
-    @extend %centerObject;
-    transform: translate(-50%, -50%) scale(1, .7);
-    border-radius: 60%;
-    border: dashed rgb(109,91,136) 1px;
-    @for $i from 1 through 5 {
-      &.item-#{$i} {
-        width: (100% - $i*18%);
-        height: (70% - $i*12%);
-      }
-    }
-  }
-  .sun {
-    @extend %sunDefault;
-    box-shadow:0px 0px 28px 9px $glowYellow;
-  }
-  .sun-glow {
-    @extend %sunDefault;
-    box-shadow:0px 0px 120px 40px $glowYellow;
-  }
-  .planet {
-    position: absolute;
-    cursor: pointer;
-    &:before {
-        content: '';
-        @extend %centerObject;
+    .title-text {
+        position: absolute;
+        top: 15%;
+        left: 50%;
         transform: translate(-50%,-50%);
-        width: 70%;
-        height: 70%;
-        border-radius: 50%;
-      }
-    &.yellow-planet {
-      left: 9%;
-      top: 38%;
-      &:before {
-        box-shadow: 0px 0px 40px 10px rgb(255,231,138);
-      }
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-shadow: 0px 0px 18px rgb(250,250,250);
+        h3 {
+            font-size: 1em;
+            letter-spacing: 2px;
+        }
+        h2 {
+            font-family: 'Fugaz One', cursive;
+            margin: 1px 0;
+        }
+        .line {
+            width: 10%;
+            height: 3px;
+            background: #fff;
+            margin: 10px 0;
+        }
     }
-    &.pink-planet {
-      left: 21%;
-      top: 53%;
-      filter: drop-shadow(0px 0px 10px rgba(210, 53, 251, 0.8));
-      &:before {
-        // box-shadow: 0px 0px 40px 10px rgb(210,53,251);
-      }
+    .landing-lines {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        .landing-line {
+            position: absolute;
+            opacity: .4;
+            &.line-1 {
+                left: -15px;
+                top: 8%;
+            }
+            &.line-2 {
+                transform: rotateX(180deg);
+                left: -15px;
+                bottom: 13%;
+
+            }
+            &.line-3 {
+                transform: rotateY(180deg);
+                right: -15px;
+                top: 8%;
+            }
+            &.line-4 {
+                transform: rotateX(180deg) rotateY(180deg);
+                right: -15px;
+                bottom: 13%;
+            }
+        }
     }
-    &.blue-planet {
-      left: 64.5%;
-      top: 55.5%;
-      &:before {
-        box-shadow: 0px 0px 40px 10px rgb(151,251,244);
-      }
+    .oval {
+        @extend %centerObject;
+        transform: translate(-50%, -50%) scale(1, .7);
+        border-radius: 60%;
+        border: dashed rgb(109,91,136) 1px;
+        @for $i from 1 through 5 {
+            &.item-#{$i} {
+                width: (100% - $i*18%);
+                height: (70% - $i*12%);
+            }
+        }
     }
-    &.purple-planet {
-      left: 88.5%;
-      top: 46%;
-      &:before {
-        box-shadow: 0px 0px 40px 10px rgb(101,74,127);
-      }
+    .sun {
+        @extend %sunDefault;
+        box-shadow:0px 0px 28px 9px $glowYellow;
     }
-  }
-  .bottom-hint {
-    position: absolute;
-    width: 60%;
-    height: 100px;
-    bottom: 1%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    .rectangle {
-      width: 10px;
-      height: 10px;
-      background-color: white;
-      margin: 0 auto;
-      transform-origin: center;
-      top: calc(50% - 20px);
-      animation: recScale 3s cubic-bezier(.68,.05,.22,.99) infinite;
-      // box-shadow: 0px 0px 4px 4px white;
+    .sun-glow {
+        @extend %sunDefault;
+        box-shadow:0px 0px 120px 40px $glowYellow;
     }
-    .rec-border-animation {
-      width: 50px;
-      height: 50px;
-      border: 2px solid white;
-      position: absolute;
-      top: calc(50% - 40px);
-      left: calc(50% - 25px);
-      animation: scale 3s cubic-bezier(.68,.05,.22,.99) infinite;
-      cursor: pointer;
+    .planet {
+        position: absolute;
+        cursor: pointer;
+        &:before {
+            content: '';
+            @extend %centerObject;
+            transform: translate(-50%,-50%);
+            width: 70%;
+            height: 70%;
+            border-radius: 50%;
+        }
+        &.yellow-planet {
+            left: 9%;
+            top: 38%;
+            &:before {
+                box-shadow: 0px 0px 40px 10px rgb(255,231,138);
+            }
+        }
+        &.pink-planet {
+            left: 21%;
+            top: 53%;
+            filter: drop-shadow(0px 0px 10px rgba(210, 53, 251, 0.8));
+            &:before {
+                // box-shadow: 0px 0px 40px 10px rgb(210,53,251);
+            }
+        }
+        &.blue-planet {
+            left: 64.5%;
+            top: 53%;
+            &:before {
+                box-shadow: 0px 0px 40px 10px rgb(151,251,244);
+            }
+        }
+        &.purple-planet {
+            left: 87.5%;
+            top: 46%;
+            &:before {
+                box-shadow: 0px 0px 40px 10px rgb(101,74,127);
+            }
+        }
+        img {
+            width: 80px;
+        }
     }
-    .line {
-      position: absolute;
-      top: calc(50% + 10px);
-      left: calc(50% + 10px);
-      opacity: .4;
+    .bottom-hint {
+        position: absolute;
+        width: 60%;
+        height: 100px;
+        bottom: 1%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        .rectangle {
+            width: 10px;
+            height: 10px;
+            background-color: white;
+            margin: 0 auto;
+            transform-origin: center;
+            top: calc(50% - 20px);
+            animation: recScale 3s cubic-bezier(.68,.05,.22,.99) infinite;
+            // box-shadow: 0px 0px 4px 4px white;
+        }
+        .rec-border-animation {
+            width: 50px;
+            height: 50px;
+            border: 2px solid white;
+            position: absolute;
+            top: calc(50% - 40px);
+            left: calc(50% - 25px);
+            animation: scale 3s cubic-bezier(.68,.05,.22,.99) infinite;
+            cursor: pointer;
+        }
+        .line {
+            position: absolute;
+            top: calc(50% + 10px);
+            left: calc(50% + 10px);
+            opacity: .4;
+        }
+        .rocket {
+            position: absolute;
+            transform: rotate(-45deg);
+            left: calc(50% + 40px);
+            top: calc(50% + 5px);
+        }
+        .hint-text {
+            position: absolute;
+            left: calc(50% + 70px);
+            top: calc(50%);
+            font-size: 1em;
+            color: white;
+            letter-spacing: 5px;
+            text-shadow: 0px 0px 4px white;
+        }
     }
-    .rocket {
-      position: absolute;
-      transform: rotate(-45deg);
-      left: calc(50% + 40px);
-      top: calc(50% + 5px);
+    @media all and (max-width: 480px) {
+        .title-text {
+            margin-top: 1em;
+            h2 {
+                font-size: 1.5rem;
+            }
+            h3 {
+                font-size: .7em;
+            }
+        }
+        .planet {
+            &:before {
+                width: 70%;
+                height: 70%;
+            }
+            img {
+                width: 40px;
+            }
+            &.pink-planet {
+                left: 15%;
+                top: 53%;
+            }
+        }
+        .bottom-hint {
+
+            .line {
+                display: none;
+            }
+            .rocket {
+                display: none;
+            }
+            .hint-text {
+                top: 85%;
+                left: 50%;
+                line-height: 1em;
+                font-size: .8em;
+                transform: translateX(-50%);
+            }
+        }
     }
-    .hint-text {
-      position: absolute;
-      left: calc(50% + 70px);
-      top: calc(50%);
-      font-size: 1em;
-      color: white;
-      letter-spacing: 5px;
-      text-shadow: 0px 0px 4px white;
-    }
-  }
 }
 
 @keyframes scale {
@@ -255,4 +297,6 @@ $glowYellow: rgb(255,231,138);
         transform: scale(3) rotateZ(180deg);
     }
 }
+
+
 </style>

@@ -69,4 +69,10 @@ export default {
             transition: .8s;
         }
     }
+
+    @media all and (max-width: 480px) {
+        #scroller {
+            display: none;
+        }
+    }
 </style>

@@ -75,7 +75,32 @@
             border: solid 1px;
         }
     }
+}
 
-
-
+@media all and (max-width: 480px) {
+    #staff {
+        padding: 0 1.5em;
+        h1 {
+            font-size: 36px;
+        }
+        .group {
+            padding: 0 0 0 2em;
+            h2 {
+                font-size: 18px;
+            }
+            .staff_card {
+                margin: 0 0 1em 0;
+                .staff_photo {
+                    margin: 0 auto;
+                    width: 65px; height: 65px;
+                    img {
+                        height: 90%;
+                    }
+                }
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+    }
 }

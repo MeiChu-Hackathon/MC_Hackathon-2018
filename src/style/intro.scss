@@ -13,9 +13,9 @@
             text-align: justify;
             letter-spacing: $letter-spacing;
             position: relative;
-            text-shadow: 0px 0px 15px rgba(#ebebeb, 0.78);
-            color: #eeecff;
-            background-color: #0e0b28;
+            color: #f7f7f7;
+            border: solid 1px #f7f7f7;
+            padding: 1em;
 
             .title_block {
                 display: inline-block;

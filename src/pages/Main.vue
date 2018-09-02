@@ -1,5 +1,7 @@
 <template>
   <div>
+
+    <div class="BG">123456789</div>
     <Landing></Landing>
     <Intro></Intro>
     <Join_info></Join_info>
@@ -53,6 +55,14 @@ export default {
 </script>
 
 <style lang="scss" media="screen">
+    .BG {
+        background-image: url('../assets/BG8.png');
+        // background-repeat: no-repeat;
+        filter: brightness(1.5);
+        background-size: cover;
+        width: 100%; height: 100%;
+        position: fixed;
+    }
     #scroller {
         position: fixed;
         top: 50%;
@@ -61,7 +71,8 @@ export default {
         z-index: 10;
         .ball {
             width: 15px; height: 15px;
-            border: solid 1.5px #1DCB8B;
+            border: solid 1.5px #6a7eff;
+            filter: drop-shadow(0px 0px 2px rgba(#6a7eff, 0.4));
             transform: scale(0);
             border-radius: 50%;
             margin: 15px 0;

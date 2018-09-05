@@ -22,18 +22,7 @@
                 <a target="blank">FAQ</a>
             </div>
         </div>
-        <div class="content_1">
-            <div class="partical col-md-6 last_partical">
-                <div class="title_block">
-                    <div class="mask"></div>
-                    <h1 class="title">參加梅竹黑客松的好處</h1>
-                </div>
-                <div class ="partical_block">
-                    <p>此活動是與企業合作出資源(硬體或API等)的方式進行，參加者能與企業在第一線接觸交流，並且提升其技術力。只要完整參與兩天一夜的活動，一律授予梅竹黑客松專屬紀念品和活動參與證書！另外，主辦單位將據依當天參與者的整體表現，選出幾組表現優秀隊伍 (視報名人數情況調整)額外頒授獎勵。</p>
-                </div>
-                <a target="blank">FAQ</a>
-            </div>
-        </div>
+
     </div>
 </template>
 <script>

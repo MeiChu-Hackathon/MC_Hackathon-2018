@@ -14,6 +14,8 @@
     <a target="_blank" href="#/sponsor-2" class="planet pink-planet"  ><img src="@/assets/pink_planet.svg"  /></a>
     <a target="_blank" href="#/sponsor-3" class="planet blue-planet"  ><img src="@/assets/blue_planet.svg"  /></a>
     <a target="_blank" href="#/sponsor-4" class="planet purple-planet"><img src="@/assets/purple_planet.svg"/></a>
+    <a target="_blank" href="#/sponsor-4" class="planet dark-blue"><img src="@/assets/dark_blue.svg"/></a>
+    <a target="_blank" href="#/sponsor-4" class="planet orange"><img src="@/assets/orange.svg"/></a>
     <div class="sun"></div>
     <div class="sun-glow"></div>
     <div class="bottom-hint">
@@ -179,6 +181,24 @@ $glowYellow: rgb(255,231,138);
                 box-shadow: 0px 0px 40px 10px rgb(101,74,127);
             }
         }
+        &.orange {
+            left: 60%;
+            top: 42%;
+            filter: brightness(1.1);
+            transform: scale(.8) rotateZ(-90deg);
+            &:before {
+                box-shadow: 0px 0px 40px 10px rgb(101,74,127);
+            }
+        }
+        &.dark-blue {
+            left: 35%;
+            top: 48%;
+            filter: brightness(1.1);
+            transform: scale(.8) rotateZ(-32deg);
+            &:before {
+                box-shadow: 0px 0px 40px 10px rgb(101,74,127);
+            }
+        }
         img {
             width: 80px;
         }
@@ -254,6 +274,18 @@ $glowYellow: rgb(255,231,138);
                 left: 15%;
                 top: 53%;
             }
+            &.dark-blue {
+                left: 30%;
+            }
+            &.orange {
+                left: 55%;
+            }
+        }
+        .sun {
+            box-shadow:0px 0px 50px 10px $glowYellow;
+        }
+        .sun-glow {
+            display: none;
         }
         .bottom-hint {
 
@@ -271,6 +303,7 @@ $glowYellow: rgb(255,231,138);
                 transform: translateX(-50%);
             }
         }
+        
     }
 }
 

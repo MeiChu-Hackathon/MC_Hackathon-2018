@@ -13,9 +13,9 @@
             text-align: justify;
             letter-spacing: $letter-spacing;
             position: relative;
-            color: #f7f7f7;
-            border: solid 1px #f7f7f7;
-            padding: 1em;
+            color: #eeecff;
+            border: solid 1px #eeecff;
+            padding: 2em;
 
             .title_block {
                 display: inline-block;
@@ -47,8 +47,6 @@
             b{
                 font-weight: 700;
             }
-        }
-        .last_partical{
             a{
                 margin-top: 1.5em;
                 border: solid 1px #34dfa0;
@@ -66,20 +64,40 @@
                 letter-spacing: $letter-spacing
             }
         }
+
     }
-    .gear {
+    .clock {
         width: 400px;
-        transform: rotateZ(-20.45deg);
         position: absolute;
-        right: 50px;
-        top: 200px;
+        right: 0px;
         img {
             width: 100%;
         }
     }
-
+    .clock.base {
+        animation: time 1200s linear infinite;
+    }
+    .clock.min {
+        top: -65px;
+        transform-origin: center 265px;
+        transform: rotateZ(45deg);
+        animation: time 60s linear infinite;
+    }
+    .clock.hour {
+        top: -60px;
+        transform-origin: center 260px;
+        transform: rotateZ(45deg);
+        animation: time 3600s linear infinite;
+    }
+    @keyframes time {
+        from {transform: rotateZ(0deg);}
+        to {transform: rotateZ(360deg);}
+    }
 
     @media all and (max-width: 480px) {
+        .partical {
+            padding: 1em 0.5em!important;
+        }
         .content_1 {
             .mask {
                 display: none;
@@ -93,7 +111,7 @@
                 }
             }
         }
-        .gear {
+        .clock {
             display: none;
         }
     }

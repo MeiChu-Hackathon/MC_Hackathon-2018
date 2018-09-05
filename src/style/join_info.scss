@@ -7,9 +7,9 @@
         .partical {
             margin-bottom: 8em;
             text-align: justify;
-            text-shadow: 0px 0px 15px rgba(#ebebeb, 0.78);
             color: #eeecff;
-            padding: 0 1em;
+            padding: 2em;
+            border: solid 1px;
 
             h1 {
                 font-size: 28px;
@@ -60,6 +60,7 @@
     }
     @media all and (max-width: 480px) {
         .partical {
+            padding: 1em 0.5em!important;
             h1 {
                 font-size: 26px!important;
             }

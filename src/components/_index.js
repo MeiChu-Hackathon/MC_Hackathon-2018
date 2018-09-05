@@ -4,6 +4,7 @@ import Landing from './landing'
 import Join_info from './join_info'
 import Schedule from './schedule'
 import Staff from './staff'
+import Sponsor from './sponsor'
 
 export default {
   MainNavbar,
@@ -11,5 +12,6 @@ export default {
   Landing,
   Join_info,
   Schedule,
-  Staff
+  Staff,
+  Sponsor
 }

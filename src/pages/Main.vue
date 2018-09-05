@@ -1,11 +1,11 @@
 <template>
   <div>
-
-    <div class="BG">123456789</div>
+    <div class="BG"></div>
     <Landing></Landing>
     <Intro></Intro>
     <Join_info></Join_info>
     <Schedule></Schedule>
+    <Sponsor></Sponsor>
     <Staff></Staff>
     <div id="scroller">
         <div @click="move('landing')" data-scroll class="ball"></div>
@@ -18,7 +18,6 @@
 </template>
 
 <script>
-
 import SmoothScroll from 'smooth-scroll';
 import sr from '../js/sr.js';
 export default {
@@ -66,7 +65,7 @@ export default {
     #scroller {
         position: fixed;
         top: 50%;
-        right: 5%;
+        right: 2%;
         transform: translateY(-50%);
         z-index: 10;
         .ball {

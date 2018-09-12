@@ -2,7 +2,7 @@
 
 #intro{
     margin-top: 6em;
-
+    font-family: 'Quicksand', 'Microsoft JhengHei';
     .content_1{
         width: 100%;
         margin-bottom: 3em;
@@ -61,7 +61,11 @@
                 width: 50%;
                 padding: .4em 0;
                 color: #34dfa0;
-                letter-spacing: $letter-spacing
+                letter-spacing: $letter-spacing;
+                &:hover {
+                    color: #333;
+                    background-color: $light-green;
+                }
             }
         }
 
@@ -78,15 +82,13 @@
         animation: time 1200s linear infinite;
     }
     .clock.min {
-        top: -65px;
-        transform-origin: center 265px;
-        transform: rotateZ(45deg);
+        top: -60px;
+        transform-origin: center 260px;
         animation: time 60s linear infinite;
     }
     .clock.hour {
-        top: -60px;
-        transform-origin: center 260px;
-        transform: rotateZ(45deg);
+        top: -48px;
+        transform-origin: center 248px;
         animation: time 3600s linear infinite;
     }
     @keyframes time {

@@ -7,6 +7,8 @@ import sponsor_3 from '@/pages/sponsor-3'
 import sponsor_4 from '@/pages/sponsor-4'
 import sponsor_5 from '@/pages/sponsor-5'
 import sponsor_6 from '@/pages/sponsor-6'
+import register from '@/pages/register'
+import QA from '@/pages/QA'
 import Join from '@/pages/join'
 
 Vue.use(Router)
@@ -78,5 +80,15 @@ export default new Router({
             name: 'sponsor_6',
             component: sponsor_6
         },
+        {
+            path: '/register',
+            name: 'register',
+            component: register
+        },
+        {
+            path: '/QA',
+            name: 'QA',
+            component: QA
+        }
     ]
 })

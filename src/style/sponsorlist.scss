@@ -5,12 +5,17 @@
     h1 {
         color: white;
         font-size: 42px;
-        margin-bottom: 1.2em;
+        margin-bottom: 1.6em;
         letter-spacing: 2.4px;
     }
     b {
         font-weight: 500;
         border-bottom: solid 5px $light-green;
+    }
+    h3 {
+        color: white;
+        margin: 0;
+        display: block;
     }
     ul {
         display: flex;
@@ -26,25 +31,16 @@
             margin-right: 1em;
             margin-top: 1em;
             min-width: 250px;
+            width: 257px; height: 155px;
             background-color: white;
+            text-align: center;
             .sponsor_reveal{
-                max-width: 100%;
+                max-width: 90%;
+                top: 50%; transform: translateY(-50%);
                 &:hover {
                     cursor: pointer;
                 }
             }
         }
     }
-    .sponsorlist {
-        width: 100%;
-
-    }
-    .diamond {
-        width: 15%;
-        left: 50%;
-        bottom: 4%;
-        transform: translate(-50%,0);
-        position: absolute;
-    }
-
 }

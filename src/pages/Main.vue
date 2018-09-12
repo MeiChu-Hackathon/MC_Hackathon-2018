@@ -55,7 +55,7 @@ export default {
 
 <style lang="scss" media="screen">
     .BG {
-        background-image: url('https://i.imgur.com/chS90KT.png');
+        background-image: url('https://i.imgur.com/xRLeODk.png');
         // background-repeat: no-repeat;
         filter: brightness(1.5);
         background-size: cover;

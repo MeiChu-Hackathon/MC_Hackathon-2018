@@ -1,7 +1,6 @@
 <template>
     <article class="join">
         <section class="container">
-            123456
         </section>
     </article>
 </template>

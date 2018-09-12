@@ -5,6 +5,8 @@ import sponsor_1 from '@/pages/sponsor-1'
 import sponsor_2 from '@/pages/sponsor-2'
 import sponsor_3 from '@/pages/sponsor-3'
 import sponsor_4 from '@/pages/sponsor-4'
+import sponsor_5 from '@/pages/sponsor-5'
+import sponsor_6 from '@/pages/sponsor-6'
 import Join from '@/pages/join'
 
 Vue.use(Router)
@@ -65,6 +67,16 @@ export default new Router({
             path: '/sponsor-4',
             name: 'sponsor_4',
             component: sponsor_4
+        },
+        {
+            path: '/sponsor-5',
+            name: 'sponsor_5',
+            component: sponsor_5
+        },
+        {
+            path: '/sponsor-6',
+            name: 'sponsor_6',
+            component: sponsor_6
         },
     ]
 })

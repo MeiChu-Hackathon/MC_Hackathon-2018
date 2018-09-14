@@ -3,19 +3,28 @@
     position: relative;
     padding: 4em 5em 3em 5em;
     h1 {
-        color: white;
-        font-size: 42px;
-        margin-bottom: 1.6em;
-        letter-spacing: 2.4px;
-    }
-    b {
-        font-weight: 500;
-        border-bottom: solid 5px $light-green;
+      font-family: 'roboto', sans-serif;
+      font-size: 54px;
+      text-align: left;
+      font-weight: regular;
+      color: #f7f7f7;
+      padding-bottom: 1em;
+      letter-spacing: $letter-spacing;
+      margin-bottom: 1em;
+
+      b{
+          font-family: 'roboto', sans-serif;
+          padding-bottom: 2px;
+          border-bottom: solid 8px #1DCB8B;
+      }
     }
     h3 {
         color: white;
         margin: 0;
         display: block;
+    }
+    .sponsorRow {
+      margin-bottom: 50px;
     }
     ul {
         display: flex;

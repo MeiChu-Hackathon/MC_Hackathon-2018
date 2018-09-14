@@ -1,10 +1,10 @@
 <template>
   <div ref="landing" id="landing">
     <div class="title-text">
-      <h2>MEICHU</h2>
+      <h2>HSINCHU <span style="font-size: .7em; font-family: inherit;">X</span> MEICHU</h2>
       <h2>HACKATHON</h2>
       <div class="line"></div>
-      <h3>10/<span style="font-size: .7em;">28.29</span></h3>
+      <h3>10/<span style="font-size: .7em;">27.28</span></h3>
     </div>
     <div class="landing-lines">
       <img v-for="id in 4" :key="id" :class="`line-${id}`" class="landing-line" src="@/assets/landing-line.svg" width="30%"/>

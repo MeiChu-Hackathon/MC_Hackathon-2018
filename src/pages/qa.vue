@@ -141,12 +141,12 @@
       <article>
           <h2><strong></strong> 請問有提供衛浴嗎？</h2>
           <section>
-              <p>沒有</p>
+              <p>顧及個人衛生與安全，本活動恰不提供任何衛浴設施供參賽者使用。</p>
           </section>
       </article>
 
       <footer>
-          &copy; 2017 MeiChu Hackathon
+          &copy; 2018 MeiChu Hackathon
       </footer>
   </div>
 </template>

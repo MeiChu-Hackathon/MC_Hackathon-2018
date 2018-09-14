@@ -1,29 +1,46 @@
 <template lang="html">
     <div id="staff" class="container">
       <h1><b>S</b>taff</h1>
-      <div class="group" >
-        <h2>行政組</h2>
-        <div  class="staff_card" >
-          <div class="staff_photo">
-              <img src="../assets/baby.png">
-          </div>
-          <p class="nickname">呂承翰</p>
-        </div>
-        <div  class="staff_card" >
-          <div class="staff_photo">
-              <img src="../assets/baby.png">
-          </div>
-          <p class="nickname">江岷錡</p>
-        </div>
+      <div class="group" v-for="(group, groupId) in groups" :key="groupId">
+        <h2>{{ group.name }}</h2>
+        <StaffComp v-for="(member, memberId) in group.members" :nickname="member" :key="memberId"/>
       </div>
     </div>
 </template>
 
 <script>
 import sr from '../js/sr.js';
+import StaffComp from './staffComp';
 
 export default {
     name: 'staff',
+    components: { StaffComp },
+    data() {
+      return {
+        groups: {
+          managers: {
+            name: '行政組',
+            members: [ '呂承翰', '江岷錡' ]
+          },
+          marketing: {
+            name: '行銷組',
+            members: [ '孫正', '黃郁恬', '李昕紘' ]
+          },
+          publicRelation: { 
+            name: '公關組',
+            members: [ '黃川', '陳姿云', '黃睿宇', '陳品竹' ]
+          },
+          activity: {
+            name: '活動組',
+            members: [ '賴政言', '洪瑋均', '何浚捷', '劉柏聲', '陳巧錚', '郭俊廷', '汪明亮', '蘇育劭' ]
+          },
+          affair: {
+            name: '公關組',
+            members: [ '王美驊', '鄭伯俞', '蔡坤哲' ]
+          }
+        }
+      }
+    },
     mounted() {
         var headAnime = this.$anime.timeline({
             easing: [0.8, 0, 0.2, 1],

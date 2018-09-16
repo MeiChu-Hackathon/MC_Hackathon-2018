@@ -5,7 +5,7 @@
             <img src="../assets/return.svg" alt="">
         </a>
         <div class="planet">
-            <img src="../assets/orange.svg">
+            <img src="../assets/blue_planet.svg">
         </div>
         <div class="intro container">
             <div class="row justify-content-end">

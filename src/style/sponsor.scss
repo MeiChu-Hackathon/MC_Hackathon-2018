@@ -6,6 +6,7 @@
         position: fixed;
         top: 0;
         background-size: cover;
+        z-index: -1;
     }
     .return {
         width: 80px;
@@ -16,6 +17,7 @@
         border: solid 2px $light-green;
         border-radius: 10px;
         text-align: center;
+        z-index: 1;
         img {
             width: 50%;
         }
@@ -90,6 +92,36 @@
                         vertical-align: top;
                     }
                 }
+            }
+        }
+    }
+    @media all and (max-width: 480px) {
+        .planet {
+            display: none;
+        }
+        .return {
+            border: none;
+            width: 40px;
+            background-color: #f7f7f7;
+            height: 40px;
+            img {
+                width: 70%;
+            }
+        }
+        .intro {
+            margin-top: 0;
+            padding: 15px;
+            h3 {
+                font-size: 20px!important;
+            }
+            p {
+                font-size: 14px!important;
+            }
+            li {
+                font-size: 14px!important;
+            }
+            a {
+                font-size: 14px!important;
             }
         }
     }

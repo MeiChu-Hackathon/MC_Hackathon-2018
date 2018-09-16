@@ -12,10 +12,9 @@
     <div :class="`item-${id}`" v-for="(item, id) in 5" :key="id" class="oval"></div>
     <a href="#/sponsor-1" class="planet yellow-planet"><img src="@/assets/yellow_planet.svg"/></a>
     <a href="#/sponsor-2" class="planet pink-planet"  ><img src="@/assets/pink_planet.svg"  /></a>
-    <a href="#/sponsor-3" class="planet dark-blue"><img src="@/assets/dark_blue.svg"/></a>
-    <a href="#/sponsor-4" class="planet orange"><img src="@/assets/orange.svg"/></a>
-    <a href="#/sponsor-5" class="planet blue-planet"  ><img src="@/assets/blue_planet.svg"  /></a>
-    <a href="#/sponsor-6" class="planet purple-planet"><img src="@/assets/purple_planet.svg"/></a>
+    <a href="#/sponsor-3" class="planet orange"><img src="@/assets/orange.svg"/></a>
+    <a href="#/sponsor-4" class="planet blue-planet"  ><img src="@/assets/blue_planet.svg"  /></a>
+    <a href="#/sponsor-5" class="planet purple-planet"><img src="@/assets/purple_planet.svg"/></a>
 
     <div class="sun"></div>
     <div class="sun-glow"></div>

@@ -153,48 +153,39 @@ $glowYellow: rgb(255,231,138);
             border-radius: 50%;
         }
         &.yellow-planet {
-            left: 9%;
+            left: 8%;
             top: 38%;
             &:before {
                 box-shadow: 0px 0px 40px 10px rgb(255,231,138);
             }
         }
         &.pink-planet {
-            left: 21%;
-            top: 53%;
+            left: 24%;
+            top: 44%;
             filter: drop-shadow(0px 0px 10px rgba(210, 53, 251, 0.8));
             &:before {
                 // box-shadow: 0px 0px 40px 10px rgb(210,53,251);
             }
         }
         &.blue-planet {
-            left: 64.5%;
-            top: 53%;
+            left: 69%;
+            top: 45%;
             &:before {
                 box-shadow: 0px 0px 40px 10px rgb(151,251,244);
             }
         }
         &.purple-planet {
-            left: 87.5%;
-            top: 46%;
+            left: 86%;
+            top: 38%;
             &:before {
                 box-shadow: 0px 0px 40px 10px rgb(101,74,127);
             }
         }
         &.orange {
-            left: 60%;
-            top: 42%;
+            left: 46.5%;
+            top: 52%;
             filter: brightness(1.1);
             transform: scale(.8) rotateZ(-90deg);
-            &:before {
-                box-shadow: 0px 0px 40px 10px rgb(101,74,127);
-            }
-        }
-        &.dark-blue {
-            left: 35%;
-            top: 48%;
-            filter: brightness(1.1);
-            transform: scale(.8) rotateZ(-32deg);
             &:before {
                 box-shadow: 0px 0px 40px 10px rgb(101,74,127);
             }

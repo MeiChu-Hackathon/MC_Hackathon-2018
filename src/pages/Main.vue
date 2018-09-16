@@ -67,13 +67,22 @@ export default {
                 y = event.clientY,
                 w = window.innerWidth,
                 h = window.innerHeight;
-            if (x > w * 0.95 - 30 && y > h * 0.4 - 50 && y < h * 0.6 + 50){
-                document.querySelectorAll(".text b").forEach(function(el) {
-                    el.style.opacity = "1";
-                })
-                document.querySelectorAll(".text .underline").forEach(function(el) {
-                    el.style.clipPath = "inset(0 0 0 0)";
-                })
+            if(window.scrollY >= 100){
+                if (x > w * 0.95 - 30 && y > h * 0.4 - 50 && y < h * 0.6 + 50){
+                    document.querySelectorAll(".text b").forEach(function(el) {
+                        el.style.opacity = "1";
+                    })
+                    document.querySelectorAll(".text .underline").forEach(function(el) {
+                        el.style.clipPath = "inset(0 0 0 0)";
+                    })
+                } else {
+                    document.querySelectorAll(".text b").forEach(function(el) {
+                        el.style.opacity = "0";
+                    })
+                    document.querySelectorAll(".text .underline").forEach(function(el) {
+                        el.style.clipPath = "inset(0 0 0 100%)";
+                    })
+                }
             } else {
                 document.querySelectorAll(".text b").forEach(function(el) {
                     el.style.opacity = "0";
@@ -82,6 +91,7 @@ export default {
                     el.style.clipPath = "inset(0 0 0 100%)";
                 })
             }
+
         })
     }
 

@@ -8,7 +8,7 @@
                     <img class="sponsor_reveal" src="../assets/LOGO/HackathonLOGO0.png"/>
                 </li>
                 <li>
-                    <img class="sponsor_reveal" src="../assets/LOGO/itri_CEL_A.jpg"/>
+                    <img style="height: 100%;" class="sponsor_reveal" src="../assets/LOGO/garvement.jpg"/>
                 </li>
             </ul>
         </div>
@@ -16,10 +16,16 @@
         <div class="sponsorRow">
             <ul>
                 <li>
-                    <img class="sponsor_reveal" src="../assets/LOGO/HackathonLOGO0.png"/>
+                    <img class="sponsor_reveal" src="../assets/LOGO/OCIC-LOGO.png"/>
+                </li>
+                <li>
+                    <img class="sponsor_reveal" src="../assets/LOGO/資策會數創所.jpg"/>
                 </li>
                 <li>
                     <img class="sponsor_reveal" src="../assets/LOGO/itri_CEL_A.jpg"/>
+                </li>
+                <li>
+                    <img style="height: 100%;" class="sponsor_reveal" src="../assets/LOGO/logo_normal.png"/>
                 </li>
             </ul>
         </div>
@@ -27,10 +33,16 @@
         <div class="sponsorRow">
             <ul>
                 <li>
-                    <img class="sponsor_reveal" src="../assets/LOGO/HackathonLOGO0.png"/>
+                    <img class="sponsor_reveal" src="../assets/LOGO/Bank.png"/>
                 </li>
                 <li>
-                    <img class="sponsor_reveal" src="../assets/LOGO/itri_CEL_A.jpg"/>
+                    <img class="sponsor_reveal" src="../assets/LOGO/logomicron.png"/>
+                </li>
+                <li>
+                    <img class="sponsor_reveal" src="../assets/LOGO/蟬吃茶.svg"/>
+                </li>
+                <li>
+                    <img style="height: 100%;" class="sponsor_reveal" src="../assets/LOGO/B0.png"/>
                 </li>
             </ul>
         </div>

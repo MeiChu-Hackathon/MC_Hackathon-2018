@@ -19,13 +19,21 @@
                     <img class="sponsor_reveal" src="../assets/LOGO/OCIC-LOGO.png"/>
                 </li>
                 <li>
-                    <img class="sponsor_reveal" src="../assets/LOGO/資策會數創所.jpg"/>
+                    <img style="width: 120%;" class="sponsor_reveal" src="../assets/LOGO/資策會數創所.jpg"/>
                 </li>
                 <li>
                     <img class="sponsor_reveal" src="../assets/LOGO/itri_CEL_A.jpg"/>
                 </li>
                 <li>
                     <img style="height: 100%;" class="sponsor_reveal" src="../assets/LOGO/logo_normal.png"/>
+                </li>
+            </ul>
+        </div>
+        <h3>指導單位</h3>
+        <div class="sponsorRow">
+            <ul>
+                <li>
+                    <img style="height: 80%;" class="sponsor_reveal" src="../assets/LOGO/ROC.png"/>
                 </li>
             </ul>
         </div>

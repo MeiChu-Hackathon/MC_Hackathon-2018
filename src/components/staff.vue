@@ -26,7 +26,7 @@ export default {
             name: '行銷組',
             members: [ '孫正', '黃郁恬', '李昕紘' ]
           },
-          publicRelation: { 
+          publicRelation: {
             name: '公關組',
             members: [ '黃川', '陳姿云', '黃睿宇', '陳品竹' ]
           },
@@ -50,22 +50,22 @@ export default {
             .add({
                 targets: '.staff_photo',
                 scale: [0,1],
-                delay: function(el, i) { return i * 100 },
-                duration: 1200,
+                delay: function(el, i) { return i * 80 },
+                duration: 1000,
             })
             .add({
                 targets: '.staff_photo',
-                delay: function(el, i) { return i * 100 },
+                delay: function(el, i) { return i * 80 },
                 borderWidth: [40, 1],
-                duration: 1200,
+                duration: 1000,
                 offset: '-=1000'
             })
             .add({
                 targets: '.nickname',
-                delay: function(el, i) { return i * 100 },
+                delay: function(el, i) { return i * 80 },
                 opacity: [0, 1],
                 translateY: [10, 0],
-                duration: 1200,
+                duration: 1000,
                 offset: '-=1000'
             })
         sr.reveal('.group', {

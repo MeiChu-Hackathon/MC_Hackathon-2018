@@ -10,11 +10,12 @@
       <img v-for="id in 4" :key="id" :class="`line-${id}`" class="landing-line" src="@/assets/landing-line.svg" width="30%"/>
     </div>
     <div :class="`item-${id}`" v-for="(item, id) in 5" :key="id" class="oval"></div>
-    <a href="#/sponsor-1" class="planet yellow-planet"><img src="@/assets/yellow_planet.svg"/></a>
-    <a href="#/sponsor-2" class="planet pink-planet"  ><img src="@/assets/pink_planet.svg"  /></a>
-    <a href="#/sponsor-3" class="planet orange"><img src="@/assets/orange.svg"/></a>
-    <a href="#/sponsor-4" class="planet blue-planet"  ><img src="@/assets/blue_planet.svg"  /></a>
-    <a href="#/sponsor-5" class="planet purple-planet"><img src="@/assets/purple_planet.svg"/></a>
+    <a href="#/sponsor-1" class="planet yellow-planet">
+        <label>羅技電子</label><img src="@/assets/yellow_planet.svg"/></a>
+    <a href="#/sponsor-2" class="planet pink-planet"  ><label>資策會</label><img src="@/assets/pink_planet.svg"  /></a>
+    <a href="#/sponsor-3" class="planet orange"><label>市政府</label><img src="@/assets/orange.svg"/></a>
+    <a href="#/sponsor-4" class="planet blue-planet"  ><label>微軟</label><img src="@/assets/blue_planet.svg"  /></a>
+    <a href="#/sponsor-5" class="planet purple-planet"><label>中華電信</label><img src="@/assets/purple_planet.svg"/></a>
 
     <div class="sun"></div>
     <div class="sun-glow"></div>
@@ -144,6 +145,12 @@ $glowYellow: rgb(255,231,138);
     .planet {
         position: absolute;
         cursor: pointer;
+        label {
+            position: absolute;
+            top: 105%;
+            color: white;
+            font-size: 18px;
+        }
         &:before {
             content: '';
             @extend %centerObject;

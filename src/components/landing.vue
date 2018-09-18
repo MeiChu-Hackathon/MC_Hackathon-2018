@@ -88,12 +88,12 @@ $glowYellow: rgb(255,231,138);
         .major {
             .sin {
                 position: absolute;
-                right: 110%;
+                right: 150%;
             }
             .mei {
                 position: absolute;
                 top: 0;
-                left: 110%;
+                left: 150%;
             }
             span {
                 z-index: -1;

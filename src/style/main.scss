@@ -1,7 +1,6 @@
 * {
     position: relative;
-    font-family: 'Quicksand', '微軟正黑體', sans-serif!important;
-
+    font-family: 'Quicksand', 'Noto Sans TC', sans-serif;
 }
 html, body {
     margin: 0; padding: 0;
@@ -23,7 +22,7 @@ $light-green: #1DCB8B;
 // bootstrap
 @import "custom";
 @import "~bootstrap/scss/bootstrap";
-
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
 
 // custom
 @import 'landing.scss';

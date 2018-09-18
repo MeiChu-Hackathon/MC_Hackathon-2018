@@ -144,12 +144,24 @@ $glowYellow: rgb(255,231,138);
     }
     .planet {
         position: absolute;
+
         cursor: pointer;
         label {
             position: absolute;
             top: 105%;
             color: white;
             font-size: 18px;
+            opacity: 0;
+            text-align: center;
+            transition: 0.5s;
+            left: 50%;
+            width: 4em;
+            transform: translateX(-50%);
+        }
+        &:hover {
+            label {
+                opacity: 1;
+            }
         }
         &:before {
             content: '';
@@ -192,7 +204,7 @@ $glowYellow: rgb(255,231,138);
             left: 46.5%;
             top: 52%;
             filter: brightness(1.1);
-            transform: scale(.8) rotateZ(-90deg);
+            // transform: scale(.8);
             &:before {
                 box-shadow: 0px 0px 40px 10px rgb(101,74,127);
             }

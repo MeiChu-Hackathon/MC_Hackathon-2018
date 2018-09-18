@@ -16,7 +16,7 @@
                     </p>
                 </div>
                 <div class="sign_in">
-                    <a>立即報名</a>
+                    <a href="https://hackathon.nctu.me/2018/signup">立即報名</a>
                 </div>
             </div>
             <div class="partical col-md-7">

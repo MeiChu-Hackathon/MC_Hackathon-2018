@@ -244,6 +244,16 @@ $glowYellow: rgb(255,231,138);
         bottom: 1%;
         left: 50%;
         transform: translate(-50%,-50%);
+        a {
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            position: absolute;
+            top: calc(50% - 40px);
+            left: calc(50% - 25px);
+            z-index: 2;
+            opacity: 0;
+        }
         .rectangle {
             width: 10px;
             height: 10px;

@@ -1,7 +1,13 @@
 <template>
   <div ref="landing" id="landing">
     <div class="title-text">
-      <h2>HSINCHU <span style="font-size: .7em; font-family: inherit;">X</span> MEICHU</h2>
+      <div class="major">
+           <h2 class="sin">HSINCHU</h2>
+            <span>X</span>
+           <h2 class="mei">MEICHU</h2>
+       </div>
+
+
       <h2>HACKATHON</h2>
       <div class="line"></div>
       <h3>10/<span style="font-size: .7em;">27.28</span></h3>
@@ -20,6 +26,7 @@
     <div class="sun"></div>
     <div class="sun-glow"></div>
     <div class="bottom-hint">
+      <a href="https://hackathon.nctu.me/2018/signup/"></a>
       <div @click="moveTrigger" class="rectangle"></div>
       <div @click="moveTrigger" class="rec-border-animation"></div>
       <img class="line" src="@/assets/landing-bottom-line.svg" width="180px"/>
@@ -78,6 +85,22 @@ $glowYellow: rgb(255,231,138);
         flex-direction: column;
         align-items: center;
         text-shadow: 0px 0px 18px rgb(250,250,250);
+        .major {
+            .sin {
+                position: absolute;
+                right: 110%;
+            }
+            .mei {
+                position: absolute;
+                top: 0;
+                left: 110%;
+            }
+            span {
+                z-index: -1;
+                font-size: 1.6em;
+                font-family: "Fugaz One";
+            }
+        }
         h3 {
             font-size: 1em;
             letter-spacing: 2px;
@@ -172,8 +195,8 @@ $glowYellow: rgb(255,231,138);
             border-radius: 50%;
         }
         &.yellow-planet {
-            left: 8%;
-            top: 38%;
+            left: 11%;
+            top: 54%;
             &:before {
                 box-shadow: 0px 0px 40px 10px rgb(255,231,138);
             }
@@ -187,15 +210,16 @@ $glowYellow: rgb(255,231,138);
             }
         }
         &.blue-planet {
-            left: 72%;
-            top: 35%;
+            left: 61%;
+            top: 30%;
             &:before {
                 box-shadow: 0px 0px 40px 10px rgb(151,251,244);
             }
         }
         &.purple-planet {
-            left: 86%;
-            top: 38%;
+            left: 81%;
+            top: 57%;
+            transform: scale(1.1);
             &:before {
                 box-shadow: 0px 0px 40px 10px rgb(101,74,127);
             }
@@ -265,6 +289,27 @@ $glowYellow: rgb(255,231,138);
     @media all and (max-width: 480px) {
         .title-text {
             margin-top: 1em;
+            text-align: center;
+            .major {
+                .sin {
+                    position: relative;
+                    right: 0;
+                }
+                .mei {
+                    position: relative;
+                    left: 0;
+                }
+                span {
+                    z-index: -1;
+                    font-size: 1.6em;
+                    position: absolute;
+                    font-family: "Fugaz One";
+                    top: 12px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    color: #333;
+                }
+            }
             h2 {
                 font-size: 1.5rem;
             }
@@ -282,7 +327,7 @@ $glowYellow: rgb(255,231,138);
             }
             &.pink-planet {
                 left: 15%;
-                top: 53%;
+                top: 40%;
             }
             &.dark-blue {
                 left: 30%;

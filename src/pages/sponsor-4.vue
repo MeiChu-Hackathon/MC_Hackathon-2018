@@ -14,9 +14,9 @@
                     <div class="part">
                         <h3>題目說明</h3>
                         <p class="en_article">Please design and implement a Microsoft Bing Maps App on iOS/Android based on Bing Maps/Geocoding APIs. Excellent user experience for daily use is the basic criteria, and creative features are strongly encouraged.</p>
+                        <a href="https://www.microsoft.com/en-us/maps/choose-your-bing-maps-api" style="font-size: 16px;">https://www.microsoft.com/en-us/maps/choose-your-bing-maps-api</a>
                         <h3>API</h3>
-                        <p class="en_article">API：<a href="https://www.microsoft.com/en-us/maps/choose-your-bing-maps-api" style="font-size: 16px;">https://www.microsoft.com/en-us/maps/choose-your-bing-maps-api</a></p>
-                        <p class="en_article">請參賽者參考 API 網址上就有很不錯的介紹以及範例，反而要我另外再寫介紹我還怕介紹的沒有 online document 那麼解單明瞭。那如果是需要文字說明的話，可能就“Please refer to the online API documents.”</p>
+                        <p class="en_article">API：</p>
                     </div>
                 </div>
             </div>

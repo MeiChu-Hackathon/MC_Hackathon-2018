@@ -10,15 +10,13 @@
         <div class="intro container">
             <div class="row justify-content-end">
                 <div class="content col-md-5">
-                    <h1>羅技電子</h1>
+                    <h1>微軟</h1>
                     <div class="part">
                         <h3>題目說明</h3>
-                        <p class="en_article">We have several ideas for the challenge, teams can pick one or many.</p>
-                        <p class="en_article">For gaming (Logitech G SDK link is <a href="https://www.logitechg.com/en-sg/developers">here</a>):</p>
-                        <p class="en_article">1) FPS, use our camera to implement gesture recognition (emotes) and inject those in an FPS game (in PUBG). Waving, looking at you, V fingers, etc. and more importantly Tilt-lean left/right on youravatar while playing.</p>
-                        <p class="en_article">2) Prototype meaningful experiences in mobile gaming for driving simulation and FPS. How might we make those experiences better?</p>
-                        <p class="en_article">3) Use the craft <a href="https://github.com/Logitech/logi_craft_sdk">SDK</a> to provide meaningful experience in gaming</p>
-                        <p class="en_article">4) While people spend a lot of time at their desks every day, wellness key. How might we link wellness applications and Logitech gear to provide feedback to users and help them stay healthy at work?</p>
+                        <p class="en_article">Please design and implement a Microsoft Bing Maps App on iOS/Android based on Bing Maps/Geocoding APIs. Excellent user experience for daily use is the basic criteria, and creative features are strongly encouraged.</p>
+                        <h3>API</h3>
+                        <p class="en_article">API：<a href="https://www.microsoft.com/en-us/maps/choose-your-bing-maps-api" style="font-size: 16px;">https://www.microsoft.com/en-us/maps/choose-your-bing-maps-api</a></p>
+                        <p class="en_article">請參賽者參考 API 網址上就有很不錯的介紹以及範例，反而要我另外再寫介紹我還怕介紹的沒有 online document 那麼解單明瞭。那如果是需要文字說明的話，可能就“Please refer to the online API documents.”</p>
                     </div>
                 </div>
             </div>

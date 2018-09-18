@@ -13,7 +13,7 @@
     <a href="#/sponsor-1" class="planet yellow-planet">
         <label>羅技電子</label><img src="@/assets/yellow_planet.svg"/></a>
     <a href="#/sponsor-2" class="planet pink-planet"  ><label>資策會</label><img src="@/assets/pink_planet.svg"  /></a>
-    <a href="#/sponsor-3" class="planet orange"><label>市政府</label><img src="@/assets/orange.svg"/></a>
+    <a href="#/sponsor-3" class="planet orange"><label>新竹市政府</label><img src="@/assets/orange.svg"/></a>
     <a href="#/sponsor-4" class="planet blue-planet"  ><label>微軟</label><img src="@/assets/blue_planet.svg"  /></a>
     <a href="#/sponsor-5" class="planet purple-planet"><label>中華電信</label><img src="@/assets/purple_planet.svg"/></a>
 
@@ -24,21 +24,21 @@
       <div @click="moveTrigger" class="rec-border-animation"></div>
       <img class="line" src="@/assets/landing-bottom-line.svg" width="180px"/>
       <img class="rocket" src="@/assets/rocket.svg" width="20px"/>
-      <span class="hint-text">現在位置</span>
+      <span class="hint-text">現在報名</span>
     </div>
   </div>
 </template>
 
 <script>
-import SmoothScroll from 'smooth-scroll';
+// import SmoothScroll from 'smooth-scroll';
 export default {
   name: 'landing',
   methods: {
-    moveTrigger() {
-      const { landing } = this.$refs;
-      const scroll = new SmoothScroll();
-      scroll.animateScroll(landing.clientHeight + 50,{},{ speed: 1500, easing: 'easeInOutQuad' });
-    }
+    // moveTrigger() {
+    //   const { landing } = this.$refs;
+    //   const scroll = new SmoothScroll();
+    //   scroll.animateScroll(landing.clientHeight + 50,{},{ speed: 1500, easing: 'easeInOutQuad' });
+    // }
   }
 }
 </script>
@@ -155,7 +155,7 @@ $glowYellow: rgb(255,231,138);
             text-align: center;
             transition: 0.5s;
             left: 50%;
-            width: 4em;
+            width: 5em;
             transform: translateX(-50%);
         }
         &:hover {
@@ -179,16 +179,16 @@ $glowYellow: rgb(255,231,138);
             }
         }
         &.pink-planet {
-            left: 24%;
-            top: 44%;
+            left: 28%;
+            top: 39%;
             filter: drop-shadow(0px 0px 10px rgba(210, 53, 251, 0.8));
             &:before {
                 // box-shadow: 0px 0px 40px 10px rgb(210,53,251);
             }
         }
         &.blue-planet {
-            left: 69%;
-            top: 45%;
+            left: 72%;
+            top: 35%;
             &:before {
                 box-shadow: 0px 0px 40px 10px rgb(151,251,244);
             }
@@ -201,8 +201,8 @@ $glowYellow: rgb(255,231,138);
             }
         }
         &.orange {
-            left: 46.5%;
-            top: 52%;
+            left: 54%;
+            top: 51%;
             filter: brightness(1.1);
             // transform: scale(.8);
             &:before {

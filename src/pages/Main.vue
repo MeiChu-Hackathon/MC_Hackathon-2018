@@ -7,7 +7,6 @@
     <Schedule></Schedule>
     <Sponsor></Sponsor>
     <Staff></Staff>
-    <!-- <Footer></Footer> -->
     <div id="scroller">
         <div class="text">
             <label><b>Home</b><div class="underline"></div></label>

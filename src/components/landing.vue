@@ -27,8 +27,8 @@
     <div class="sun-glow"></div>
     <div class="bottom-hint">
       <a href="https://hackathon.nctu.me/2018/signup/"></a>
-      <div @click="moveTrigger" class="rectangle"></div>
-      <div @click="moveTrigger" class="rec-border-animation"></div>
+      <div class="rectangle"></div>
+      <div class="rec-border-animation"></div>
       <img class="line" src="@/assets/landing-bottom-line.svg" width="180px"/>
       <img class="rocket" src="@/assets/rocket.svg" width="20px"/>
       <span class="hint-text">現在報名</span>
@@ -37,16 +37,8 @@
 </template>
 
 <script>
-// import SmoothScroll from 'smooth-scroll';
 export default {
-  name: 'landing',
-  methods: {
-    // moveTrigger() {
-    //   const { landing } = this.$refs;
-    //   const scroll = new SmoothScroll();
-    //   scroll.animateScroll(landing.clientHeight + 50,{},{ speed: 1500, easing: 'easeInOutQuad' });
-    // }
-  }
+  name: 'landing'
 }
 </script>
 

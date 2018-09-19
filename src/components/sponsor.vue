@@ -60,33 +60,31 @@
                 <li>
                     <img onclick="window.open('https://www.cathayholdings.com/holdings/','mywindow');" class="sponsor_reveal" src="../assets/LOGO/Bank.png"/>
                 </li>
+                <li>
+                    <img onclick="window.open('https://www.bensimon.com.tw/','mywindow');" style="height: 100%;" class="sponsor_reveal" src="../assets/LOGO/B0.png"/>
+                </li>
+                <li>
+                    <img onclick="window.open('https://tw.micron.com/','mywindow');" class="sponsor_reveal" src="../assets/LOGO/logomicron.png"/>
+                </li>
             </ul>
         </div>
         <h3>贊助 - B級</h3>
         <div class="sponsorRow">
             <ul>
                 <li>
-                    <img onclick="window.open('https://tw.micron.com/','mywindow');" class="sponsor_reveal" src="../assets/LOGO/logomicron.png"/>
-                </li>
-                <li>
                     <img onclick="window.open('https://organic-naturetea.com/','mywindow');" class="sponsor_reveal" src="../assets/LOGO/蟬吃茶.svg"/>
                 </li>
-                <li>
-                    <img onclick="window.open('https://www.bensimon.com.tw/','mywindow');" style="height: 100%;" class="sponsor_reveal" src="../assets/LOGO/B0.png"/>
-                </li>
+
             </ul>
         </div>
         <h3>贊助 -C級</h3>
         <div class="sponsorRow">
             <ul>
                 <li>
-                    <img onclick="window.open('https://tw.micron.com/','mywindow');" class="sponsor_reveal" src="../assets/LOGO/logomicron.png"/>
+                    <img style="height: 100%;" onclick="window.open('http://www.gcomm.com.tw/','mywindow');" class="sponsor_reveal" src="../assets/LOGO/GCOMM.png"/>
                 </li>
                 <li>
-                    <img onclick="window.open('https://organic-naturetea.com/','mywindow');" class="sponsor_reveal" src="../assets/LOGO/蟬吃茶.svg"/>
-                </li>
-                <li>
-                    <img onclick="window.open('https://www.bensimon.com.tw/','mywindow');" style="height: 100%;" class="sponsor_reveal" src="../assets/LOGO/B0.png"/>
+                    <img onclick="window.open('https://vegaball.com.tw/zhtw/','mywindow');" class="sponsor_reveal" src="../assets/LOGO/Vegaballs.jpg"/>
                 </li>
             </ul>
         </div>

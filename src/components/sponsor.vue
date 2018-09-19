@@ -54,7 +54,7 @@
                 </li>
             </ul>
         </div>
-        <h3>S級贊助</h3>
+        <h3>贊助 - S級</h3>
         <div class="sponsorRow">
             <ul>
                 <li>
@@ -62,7 +62,7 @@
                 </li>
             </ul>
         </div>
-        <h3>B級贊助</h3>
+        <h3>贊助 - B級</h3>
         <div class="sponsorRow">
             <ul>
                 <li>
@@ -76,7 +76,7 @@
                 </li>
             </ul>
         </div>
-        <h3>C級贊助</h3>
+        <h3>贊助 -C級</h3>
         <div class="sponsorRow">
             <ul>
                 <li>

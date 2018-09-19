@@ -77,7 +77,7 @@
 
             </ul>
         </div>
-        <h3>贊助 -C級</h3>
+        <h3>贊助 - C級</h3>
         <div class="sponsorRow">
             <ul>
                 <li>
@@ -85,6 +85,17 @@
                 </li>
                 <li>
                     <img onclick="window.open('https://vegaball.com.tw/zhtw/','mywindow');" class="sponsor_reveal" src="../assets/LOGO/Vegaballs.jpg"/>
+                </li>
+            </ul>
+        </div>
+        <h3>贊助 - D級</h3>
+        <div class="sponsorRow">
+            <ul>
+                <li>
+                    <img onclick="window.open('http://www.intumit.com/aboutIntumit.html','mywindow');" class="sponsor_reveal" src="../assets/LOGO/1536227995940.jpg"/>
+                </li>
+                <li>
+                    <img onclick="window.open('https://www.chief.com.tw/dispPageBox/hp.aspx?ddsPageID=CHINDEX','mywindow');" class="sponsor_reveal" src="../assets/LOGO/1535080430716.jpg"/>
                 </li>
             </ul>
         </div>

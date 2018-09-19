@@ -86,6 +86,9 @@
                 <li>
                     <img onclick="window.open('https://vegaball.com.tw/zhtw/','mywindow');" class="sponsor_reveal" src="../assets/LOGO/Vegaballs.jpg"/>
                 </li>
+                <li>
+                    <img onclick="window.open('http://www.49101.com.tw/','mywindow');" class="sponsor_reveal" src="../assets/LOGO/LOGO-01.png"/>
+                </li>
             </ul>
         </div>
         <h3>贊助 - D級</h3>

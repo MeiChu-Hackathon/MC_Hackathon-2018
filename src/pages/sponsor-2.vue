@@ -37,7 +37,7 @@
                         <p>建構智慧空氣清淨機物聯網數據平台以視覺化建構環境(包含溫溼度、空氣品質狀況等) 時序變化- 打造智慧空氣清淨機物之特徵值，並進行分析，所得的結果可供大樓管控運用</p>
                         <ul>
                             <li>歷史資料<a style="font-size: 16px" href="https://drive.google.com/file/d/1SnHy7EweVlry54Uqeazza4uCJZx7ON0F/view?usp=sharing">https://drive.google.com/file/d/1SnHy7EweVlry54Uqeazza4uCJZx7ON0F/view?usp=sharing</a></li>
-                            <li>即時資料 (如附檔，請用chrome開啟)</li>
+                            <li>即時資料 <a href="https://hackathon.nctu.me/2018/dashboard.html" target="_blank"><img src="../assets/file.svg" style="width: 18px;"></a>  (如附檔，請用chrome開啟)</li>
                         </ul>
                     </div>
                 </div>

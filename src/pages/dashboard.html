@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>IDEAS-CHAIN</title>
+		<meta charset="utf-8" />
+	</head>
+	<body>
+		<textarea id="textArea" style="width:100%;height:100vh"></textarea>
+		
+		<script>
+		//Project key
+		const AK = "FPzUKflQ83TkNLHf";
+
+		//Time delay
+		const DELAY = 5000;
+		function getData(did,callback){
+			var request = new XMLHttpRequest();
+			request.onreadystatechange= function () {
+				if (request.readyState == 4 && request.status == 200) {
+					if(typeof(callback)=="function"){
+						callback(request.responseText)
+					}					
+				}		
+			}
+			
+			request.open("GET","https://ideaschain.com.tw/iot/v1/rawdata/"+did);
+			request.setRequestHeader("AK", AK);
+			request.send();	
+			
+			
+			setTimeout(function(){
+				getData(did,callback);
+			},DELAY)
+		}		
+
+		//DeviceIds : 0694317100256465,7507049124919002,2572728355120093
+		getData("0694317100256465",function(r){
+			var textArea = document.getElementById("textArea");
+			textArea.value= new Date() + "\n" + r + "\n" + "\n" + textArea.value;
+		});
+		</script>
+	</body>
+</html>

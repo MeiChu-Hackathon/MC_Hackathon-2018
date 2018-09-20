@@ -30,9 +30,9 @@
                     <div class="event_text"><p class="schedule_card schedule_card_right">最後衝刺</p><p class="time_text" ><b>08</b>00</p></div>
                     <div class="event_text"><p class="schedule_card schedule_card_right">午餐時間</p><p class="time_text" ><b>11</b>00</p></div>
                     <div class="event_text"><p class="schedule_card schedule_card_right">最後衝刺</p><p class="time_text" ><b>12</b>00</p></div>
-                    <div class="event_text"><p class="schedule_card schedule_card_right">黑客組初賽 demo</p><p class="time_text" ><b>13</b>30</p></div>
-                    <div class="event_text"><p class="schedule_card schedule_card_right">創客組 demo</p><p class="time_text" ><b>14</b>00</p></div>
-                    <div class="event_text"><p class="schedule_card schedule_card_right">黑客組決賽</p><p class="time_text" ><b>15</b>30</p></div>
+                    <div class="event_text"><p class="schedule_card schedule_card_right">黑客組初賽開始 demo</p><p class="time_text" ><b>13</b>30</p></div>
+                    <div class="event_text"><p class="schedule_card schedule_card_right">創客組開始 demo</p><p class="time_text" ><b>14</b>00</p></div>
+                    <div class="event_text"><p class="schedule_card schedule_card_right">黑客組決賽開始 demo</p><p class="time_text" ><b>15</b>30</p></div>
                     <div class="event_text"><p class="schedule_card schedule_card_right">抽獎活動</p><p class="time_text" ><b>17</b>00</p></div>
                     <div class="event_text"><p class="schedule_card schedule_card_right">頒獎</p><p class="time_text" ><b>17</b>30</p></div>
                     <div class="event_text"><p class="schedule_card schedule_card_right">閉幕式</p><p class="time_text" ><b>18</b>00</p></div>

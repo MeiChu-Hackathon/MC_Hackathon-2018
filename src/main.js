@@ -6,6 +6,7 @@ import VueAnime from 'vue-animejs';
 import 'bootstrap';
 import '@/style/main.scss'
 
+
 Vue.use(VueAnime)
 Object.keys(Components).forEach(key => {
   Vue.component(key, Components[key])

@@ -32,7 +32,7 @@
                         <p>We have several ideas for the challenge, teams can pick one or many.</p>
                         <p>For gaming (Logitech G SDK link is <a href="https://www.logitechg.com/en-sg/developers">here</a>):</p>
                         <p>1) FPS, use our camera to implement gesture recognition (emotes) and inject those in an FPS game (in PUBG).<br>Waving, looking at you, V fingers, etc. and more importantly Tilt-lean left/right on your avatar while playing.</p>
-                        <p>2)Prototype meaningful experiences in mobile gaming for driving simulation and FPS. How might we make those experiences better?</p>
+                        <p>2)Combining technology and user behavior understanding, the team has to create an experience that would be useful or enjoyable for the gamer in mobile gaming for driving simulation and FPS. How might we make those experiences better?</p>
                         <p>3) Use the craft <a href="3) Use the craft SDK to provide meaningful experience in gaming">SDK</a> to provide meaningful experience in gaming</p>
                         <p>4) While people spend a lot of time at their desks every day, wellness key. How might we link wellness applications and Logitech gear to provide feedback to users and help them stay healthy at work?</p>
                     </div>

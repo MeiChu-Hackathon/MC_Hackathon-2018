@@ -1,6 +1,12 @@
 <template>
   <div>
     <div class="BG"></div>
+    <div class="message-box">
+        <h3>點擊星球</h3>
+        <p>獲得更多企業資訊喔XD</p>
+        <!-- <div class="line"></div> -->
+        <div class="exit" @click = "clear()"><img src="../assets/close.svg" ></div>
+    </div>
     <Landing></Landing>
     <Intro></Intro>
     <Join_info></Join_info>
@@ -29,6 +35,9 @@
             <div @click="move('staff')" data-scroll class="ball"></div>
         </div>
     </div>
+
+    <div id="fancy-box" @click="clear()"></div>
+
   </div>
 </template>
 
@@ -42,11 +51,18 @@ export default {
             var scroll = new SmoothScroll();
             var top = document.getElementById(target);
             scroll.animateScroll(top, {}, { speed: 1300, easing: 'easeInOutCubic' });
+        },
+        clear(){
+            document.getElementById('fancy-box').style.opacity = "0";
+            document.getElementsByClassName('message-box')[0].style.opacity = "0";
+            document.getElementsByTagName('html')[0].style.overflow = "auto"
+            document.getElementsByTagName('body')[0].style.overflow = "auto"
         }
     },
     mounted(){
         var w = window.innerWidth,
             h = window.innerHeight;
+
         document.addEventListener('scroll', function(){
             // let delay = [1, 1, 2, 3, 5]
             if(window.scrollY >= 100){
@@ -153,6 +169,51 @@ export default {
                 label {
                     opacity: 1;
                 }
+            }
+        }
+    }
+    #fancy-box {
+        width: 100vw; height: 100vh;
+        background-color: rgba(#000000, 0.8);
+        z-index: 998;
+        top: 0;
+        position: fixed;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    .message-box {
+        padding: 15px;
+        position: absolute;
+        border: solid 1px #1DCB8B;
+        left: 39%;
+        top: 4%;
+        color: white;
+        letter-spacing: 0.2em;
+        z-index: 999;
+        transition: 0.5s;
+        h3 {
+            font-size: 16px;
+            font-weight: 300;
+            margin-bottom: 0.3em;
+        }
+        p {
+            font-size: 14px;
+            font-weight: 100;
+            margin: 0;
+        }
+        .line {
+            width: 20px;
+            border-bottom: solid 1px white;
+            position: absolute;
+            top: 15px; right: calc(100% + 13px);
+        }
+        .exit {
+            width: 10px;
+            position: absolute;
+            right: 10px; top: 0;
+            cursor: pointer;
+            img {
+                width: 100%;
             }
         }
     }

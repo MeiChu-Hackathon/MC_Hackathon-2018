@@ -17,7 +17,7 @@
     </div>
     <div :class="`item-${id}`" v-for="(item, id) in 5" :key="id" class="oval"></div>
     <a href="#/sponsor-1" class="planet yellow-planet"><div class="glow"></div><label>羅技電子</label><img src="@/assets/yellow_planet.svg"/></a>
-    <a href="#/sponsor-2" class="planet pink-planet" > <div class="glow"></div><label>資策會</label><img src="@/assets/pink_planet.svg"  /></a>
+    <a href="#/sponsor-2" class="planet pink-planet" style="z-index: 1000"> <div class="glow"></div><label>資策會</label><img src="@/assets/pink_planet.svg" /></a>
     <a href="#/sponsor-3" class="planet orange"><div class="glow"></div><label>新竹市政府</label><img src="@/assets/orange.svg"/></a>
     <a href="#/sponsor-4" class="planet blue-planet"><div class="glow"></div><label>微軟</label><img src="@/assets/blue_planet.svg"  /></a>
     <a href="#/sponsor-5" class="planet purple-planet"><div class="glow"></div><label>中華電信</label><img src="@/assets/purple_planet.svg"/></a>

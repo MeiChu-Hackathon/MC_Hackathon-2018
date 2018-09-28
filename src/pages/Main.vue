@@ -54,6 +54,8 @@ export default {
         },
         clear(){
             document.getElementById('fancy-box').style.opacity = "0";
+
+            document.getElementById('fancy-box').style.zIndex = "-1";
             document.getElementsByClassName('message-box')[0].style.opacity = "0";
             document.getElementsByTagName('html')[0].style.overflow = "auto"
             document.getElementsByTagName('body')[0].style.overflow = "auto"
@@ -217,7 +219,6 @@ export default {
             }
         }
     }
-
     @keyframes trimPath {
         0% {
             clip-path: inset(0 0 0 100%);
@@ -233,6 +234,12 @@ export default {
     @media all and (max-width: 480px) {
         #scroller {
             display: none;
+        }
+
+        .message-box {
+            left: 20%;
+            top: 2.5%;
+
         }
     }
 </style>

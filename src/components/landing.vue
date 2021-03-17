@@ -24,14 +24,14 @@
 
     <div class="sun"></div>
     <div class="sun-glow"></div>
-    <div class="bottom-hint">
+    <!-- <div class="bottom-hint">
       <a href="https://hackathon.nctu.me/2018/signup/"></a>
       <div class="rectangle"></div>
       <div class="rec-border-animation"></div>
       <img class="line" src="@/assets/landing-bottom-line.svg" width="180px"/>
       <img class="rocket" src="@/assets/rocket.svg" width="20px"/>
-      <span class="hint-text">現在報名</span>
-    </div>
+      <span class="hint-text">報名截止摟</span>
+    </div> -->
   </div>
 </template>
 
@@ -255,17 +255,18 @@ $glowYellow: rgb(255,231,138);
         .rectangle {
             width: 10px;
             height: 10px;
-            background-color: white;
+            background-color: #f24747;
             margin: 0 auto;
             transform-origin: center;
             top: calc(50% - 20px);
+            transform: scale(1.7);
             animation: recScale 3s cubic-bezier(.68,.05,.22,.99) infinite;
             // box-shadow: 0px 0px 4px 4px white;
         }
         .rec-border-animation {
             width: 50px;
             height: 50px;
-            border: 2px solid white;
+            border: 2px solid #f24747;
             position: absolute;
             top: calc(50% - 40px);
             left: calc(50% - 25px);
@@ -372,27 +373,27 @@ $glowYellow: rgb(255,231,138);
 
 @keyframes scale {
   0% {
-    transform: scale(.3) rotateZ(0deg);
+    transform: scale(.3);
+    opacity: 1;
   }
-  50% {
-    transform: scale(.7) rotateZ(90deg);
-  }
+
   100% {
-    transform: scale(.3) rotateZ(180deg);
+    transform: scale(.7);
+    opacity: 0;
   }
 }
 
-@keyframes recScale {
-    0% {
-        transform: scale(3) rotateZ(0deg);
-    }
-    50% {
-        transform: scale(1) rotateZ(90deg);
-    }
-    100% {
-        transform: scale(3) rotateZ(180deg);
-    }
-}
+// @keyframes recScale {
+//     0% {
+//         transform: scale(3);
+//     }
+//     50% {
+//         transform: scale(1);
+//     }
+//     100% {
+//         transform: scale(3);
+//     }
+// }
 
 @keyframes glow {
     0% {

@@ -36,7 +36,7 @@
     "jquery": "^3.6.0",
     "lottie-web": "^5.2.0",
     "node-notifier": "^5.1.2",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "optimize-css-assets-webpack-plugin": "^5.0.4",
     "ora": "^1.2.0",
     "popper.js": "^1.14.4",
